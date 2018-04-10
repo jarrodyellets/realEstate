@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Nav from './components/nav';
+import NavBar from './components/nav';
 
 import style from '../public/css/style.css';
 
@@ -12,7 +12,7 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Nav />
+				<NavBar />
 				<div className="main">
 
 				</div>

@@ -132,3 +132,11 @@ select option {
 	border: 1px solid #eee;
 	height: 50px;
 }
+
+.selectButton:hover {
+	background: #379683;
+}
+
+.selectButton:focus {
+	outline: none;
+}

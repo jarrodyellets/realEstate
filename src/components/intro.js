@@ -20,6 +20,7 @@ class Intro extends Component {
 	render(){
 		return (
 			<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
+				<div className="introTitle">Find you new {this.state.day ? 'home' : 'rental'}</div>
 				<button onClick={this.handleClick}>Click Me</button>
 			</div>
 			)

@@ -9,7 +9,7 @@ const NavBar = (props) => {
 		      <a href="#brand">
 		      	<img className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 		      </a>
-		      <div className="logoTitle">Austin's premiere real estate</div>
+		      <div className="logoTitle">Austin's Real Estate Portal</div>
 		    </Navbar.Brand>
 		    <Navbar.Toggle />
 		  </Navbar.Header>

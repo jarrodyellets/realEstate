@@ -17,10 +17,10 @@ class Card extends Component {
 		return(
 			<div className="card" style={cardStyle}>
 				<div className="description">
-					<div className="price">{this.props.price}</div>
-					<div className="beds">{this.props.beds}</div>
-					<div className="baths">{this.props.baths}</div>
-					<div className="size">{this.props.size}</div>
+					<span className="price">{this.props.price} </span>
+					<span className="beds">{this.props.beds} </span>
+					<span className="baths">{this.props.baths} </span>
+					<span className="size">{this.props.size}</span>
 				</div>
 				<div className="address"> {this.props.address}</div>
 			</div>

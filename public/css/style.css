@@ -167,19 +167,18 @@ select option {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	color: #eee;
+	color: #fff;
 	font-size: 18px;
 	font-family: Verdana;
+	text-shadow:0px 0px 10px #000000;
 }
 
 .description {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	display: inline-block;
 }
 
 .price {
-	font-size: 24px;
+	font-size: 28px;
 
 }
 

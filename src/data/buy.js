@@ -64,8 +64,8 @@ const propertiesBuy = [
 	},
 	{
 		neighborhood: "downtown",
-		price: "$1,968,570 ",
-		bedrooms: " 3 bds",
+		price: "$1,968,570",
+		bedrooms: "3 bds",
 		bathrooms: "3 ba",
 		size: "2,179 sqft",
 		address: "70 Rainey St",

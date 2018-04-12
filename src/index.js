@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './components/nav';
 import Intro from './components/intro';
+import buy from './data/buy';
 
 import style from '../public/css/style.css';
 
@@ -9,7 +10,8 @@ class App extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			intro: true
+			intro: true,
+			mode: "intro"
 		}
 	}
 
@@ -17,7 +19,7 @@ class App extends Component {
 		return (
 			<div>
 				<NavBar />
-				<Intro />
+				<Intro buy={buy} />
 			</div>
 			)
 	}

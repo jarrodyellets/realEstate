@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Neighborhood from './neighborhood';
+import Featured from './featured';
+
 
 class Intro extends Component {
 	constructor(props){
@@ -26,15 +28,18 @@ class Intro extends Component {
 
 	render(){
 		return (
-			<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
-				<div className="titleContainer">
-					<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>
-					<div className="buttonIntroDiv">
-						<button className={this.state.day ? 'introButton activeButton' : 'introButton unActiveButton'} onClick={this.handleBuyClick}>Buy</button>
-						<button className={this.state.day ? 'introButton unActiveButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
+			<div>
+				<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
+					<div className="titleContainer">
+						<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>
+						<div className="buttonIntroDiv">
+							<button className={this.state.day ? 'introButton activeButton' : 'introButton unActiveButton'} onClick={this.handleBuyClick}>Buy</button>
+							<button className={this.state.day ? 'introButton unActiveButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
+						</div>
+						<Neighborhood />
 					</div>
-					<Neighborhood />
 				</div>
+				<Featured buy={this.props.buy} />
 			</div>
 			)
 	}

@@ -90,15 +90,18 @@
 
 .introButton {
 	font-size: 18px;
-	background: rgba(0, 0, 0, .6);
 	padding: 10px;
 	border: 1px solid #eee;
 	height: 50px;
 	width: 50%;
 }
 
-.introButton:hover {
-	background: #379683;
+.unActiveButton {
+	background: rgba(0, 0, 0, .6);
+}
+
+.unActiveButton:hover {
+	background: rgba(55, 150, 131, .5);
 }
 
 .introButton:focus {
@@ -134,7 +137,7 @@ select option {
 }
 
 .selectButton:hover {
-	background: #379683;
+	background: rgba(55, 150, 131, .5);
 }
 
 .selectButton:focus {

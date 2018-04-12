@@ -30,8 +30,8 @@ class Intro extends Component {
 				<div className="titleContainer">
 					<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>
 					<div className="buttonIntroDiv">
-						<button className={this.state.day ? 'introButton activeButton' : 'introButton'} onClick={this.handleBuyClick}>Buy</button>
-						<button className={this.state.day ? 'introButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
+						<button className={this.state.day ? 'introButton activeButton' : 'introButton unActiveButton'} onClick={this.handleBuyClick}>Buy</button>
+						<button className={this.state.day ? 'introButton unActiveButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
 					</div>
 					<Neighborhood />
 				</div>

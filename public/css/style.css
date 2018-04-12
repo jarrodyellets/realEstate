@@ -168,8 +168,9 @@ select option {
 	flex-direction: column;
 	justify-content: flex-end;
 	color: #fff;
-	font-size: 18px;
-	font-family: Verdana;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 	text-shadow:0px 0px 10px #000000;
 }
 

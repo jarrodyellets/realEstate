@@ -22,7 +22,7 @@ class Card extends Component {
 					<span className="baths">{this.props.baths} </span>
 					<span className="size">{this.props.size}</span>
 				</div>
-				<div className="address"> {this.props.address}</div>
+				<div className="address"> {this.props.address} Austin, TX</div>
 			</div>
 		)
 	}

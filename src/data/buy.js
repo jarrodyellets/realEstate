@@ -131,7 +131,7 @@ const propertiesBuy = [
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
 		size: "2,310 sqft",
-		address: "2115 Brackenridge",
+		address: "2115 Brackenridge St",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2115brackenridge.jpg"
 	},
 	{
@@ -142,6 +142,78 @@ const propertiesBuy = [
 		size: "731 sqft",
 		address: "2020 S Congress Ave",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2020scongress.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$750,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "2,215 sqft",
+		address: "1307 E 13th St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1307e13th.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$600,000",
+		bedrooms: "2 bds",
+		bathrooms: "1 ba",
+		size: "1,071 sqft",
+		address: "1711 E 7th St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1711e7th.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$1,150,000",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "2,324 sqft",
+		address: "1307 Waller St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1307waller.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$375,000",
+		bedrooms: "2 bds",
+		bathrooms: "1 ba",
+		size: "959 sqft",
+		address: "1903 New York Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1903newyork.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$745,000",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "1,584 sqft",
+		address: "1113 E 3rd St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1113e3rd.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$320,000",
+		bedrooms: "2 bds",
+		bathrooms: "1 ba",
+		size: "528 sqft",
+		address: "1208 Chestnut Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1208chestnut.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$675,000",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "2,235 sqft",
+		address: "1304 Leona St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1304leona.jpg"
+	},
+	{
+		neighborhood: "east-austin",
+		price: "$689,000",
+		bedrooms: "3 bds",
+		bathrooms: "2 ba",
+		size: "2,448 sqft",
+		address: "708 Northwestern Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/708northwestern.jpg"
 	}
 ]
 

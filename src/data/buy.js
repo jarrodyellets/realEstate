@@ -79,7 +79,7 @@ const propertiesBuy = [
 		size: "2,220 sqft",
 		address: "1303 Hillside Ave",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1303hillside.jpg"
-	}, 
+	},
 	{
 		neighborhood: "travis-heights",
 		price: "$528,600",
@@ -214,6 +214,114 @@ const propertiesBuy = [
 		size: "2,448 sqft",
 		address: "708 Northwestern Ave",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/708northwestern.jpg"
+	},
+	{
+		neighborhood: "rollingwood",
+		price: "$11,500,000",
+		bedrooms: "6 bds",
+		bathrooms: "9 ba",
+		size: "9,716 sqft",
+		address: "3148 Above Stratford Pl",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/3148abovestratford.jpg"
+	},
+	{
+		neighborhood: "rollingwood",
+		price: "$1,854,000",
+		bedrooms: "5 bds",
+		bathrooms: "4 ba",
+		size: "4,250 sqft",
+		address: "3125 Above Stratford Pl",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/3125abovestratford.jpg"
+	},
+	{
+		neighborhood: "rollingwood",
+		price: "$2,000,000",
+		bedrooms: "5 bds",
+		bathrooms: "5 ba",
+		size: "6,773 sqft",
+		address: "124 Birnam Wood Ct",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/124birnamwood.jpg"
+	},
+	{
+		neighborhood: "rollingwood",
+		price: "$800,000",
+		bedrooms: "3 bds",
+		bathrooms: "1 ba",
+		size: "1,683 sqft",
+		address: "403 Ridgewood Rd",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/403ridgewood.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$999,999",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "3,183 sqft",
+		address: "1702 Cresthaven Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1702cresthaven.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$549,500",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "1,820 sqft",
+		address: "2607 Trailside Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2607trailside.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$900,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "2,572 sqft",
+		address: "1802 Westridge Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1802westridge.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$775,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "2,436 sqft",
+		address: "2404 Homedale Cir",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2404homedale.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$589,000",
+		bedrooms: "3 bds",
+		bathrooms: "2 ba",
+		size: "1,209 sqft",
+		address: "2409 Elmglen Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2409elmglen.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$875,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "2,670 sqft",
+		address: "1001 Kinney Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1001kinney.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$1,350,000",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "2,752 sqft",
+		address: "2909 Barton Pkwy",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2909barton.jpg"
+	},
+	{
+		neighborhood: "barton-hills",
+		price: "$600,000",
+		bedrooms: "3 bds",
+		bathrooms: "2 ba",
+		size: "1,156 sqft",
+		address: "2109 Peach Tree St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2109peachtree.jpg"
 	}
 ]
 

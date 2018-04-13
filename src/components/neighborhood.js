@@ -13,8 +13,6 @@ const Neighborhood = (props) => {
 				<option value="westlake">Westlake</option>
 				<option value="tarrytown">Tarrytown</option>
 				<option value="hyde-park">Hyde Park</option>
-				<option value="east-riverside">East Riverside</option>
-				<option value="allandale">Allandale</option>
 			</select>
 			<button className="selectButton">Submit</button>
 		</div>

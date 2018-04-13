@@ -180,6 +180,26 @@ select option {
 
 .price {
 	font-size: 28px;
+}
 
+.houseIconDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.houseIcon {
+	font-size: 24px;
+	color: red;
+}
+
+.priceMap {
+	color: #333;
+	background: #eee;
+	border-radius: 3px;
+	font-weight: 700;
+	font-size: 12px;
 }
 

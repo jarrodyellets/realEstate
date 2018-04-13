@@ -5,7 +5,7 @@ import Geocode from 'react-geocode';
 let la = 0;
 let lo = 0;
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-const house = <i className="fas fa-home"></i>;
+const house = <div className="houseIconDiv"><i className="fas fa-home houseIcon"></i><div className="priceMap">$500k</div></div>;
 Geocode.setApiKey("AIzaSyDwxBir2yZyRQ2Zn8MCCY1UL7N-YA6mHwE")
 
 Geocode.fromAddress("1303 Hillside Ave Austin TX").then(
@@ -29,7 +29,7 @@ class SimpleMap extends Component {
 				lat: 30.266926,
 				lng: -97.750519
 			},
-			zoom: 11
+			zoom: 14
 		};
 
 		this.loadMap = this.loadMap.bind(this);

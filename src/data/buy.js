@@ -439,6 +439,78 @@ const propertiesBuy = [
 		size: "2,052 sqft",
 		address: "2304 Greenlee Dr",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2304greenlee.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$215,000",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "630 sqft",
+		address: "3815 Guadalupe St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/3815guadalupe.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$625,000",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "1,552 sqft",
+		address: "4527 Avenue H",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/4527avenueh.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$539,000",
+		bedrooms: "3 bds",
+		bathrooms: "2 ba",
+		size: "1,361 sqft",
+		address: "4412 Avenue C",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/4412avenuec.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$425,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "1,308 sqft",
+		address: "4502 Avenue F",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/4502avenuef.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$660,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "2,048 sqft",
+		address: "4412 Barrow Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/4412barrow.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$599,000",
+		bedrooms: "1 bd",
+		bathrooms: "2 ba",
+		size: "1,410 sqft",
+		address: "4522 Caswell Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/4522caswell.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$574,000",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "1,781 sqft",
+		address: "701 E 49th St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/701e49th.jpg"
+	},
+	{
+		neighborhood: "hyde-park",
+		price: "$525,000",
+		bedrooms: "3 bds",
+		bathrooms: "2]3 ba",
+		size: "1,538 sqft",
+		address: "402 W 51st St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/402w51st.jpg"
 	}
 ]
 

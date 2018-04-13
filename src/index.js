@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './components/nav';
 import Intro from './components/intro';
+import SimpleMap from './components/map';
 import buy from './data/buy';
 
 import style from '../public/css/style.css';
@@ -20,6 +21,7 @@ class App extends Component {
 			<div>
 				<NavBar />
 				<Intro buy={buy} />
+				<SimpleMap />
 			</div>
 			)
 	}

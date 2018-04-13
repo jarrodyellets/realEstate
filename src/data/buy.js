@@ -367,6 +367,78 @@ const propertiesBuy = [
 		size: "2,828 sqft",
 		address: "2926 Westlake Cv",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2926westlake.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$1,595,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "3,379 sqft",
+		address: "3411 Bonnie Rd",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/3411bonnie.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$3,250,000",
+		bedrooms: "7 bds",
+		bathrooms: "9 ba",
+		size: "8,009 sqft",
+		address: "2501 El Greco Cv",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2501elgreco.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$1,289,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "4,091 sqft",
+		address: "2621 Exposition Blvd",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2621exposition.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$1,250,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "3,962 sqft",
+		address: "2501 Tower Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2501tower.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$1,200,000",
+		bedrooms: "3 bds",
+		bathrooms: "2 ba",
+		size: "2,247 sqft",
+		address: "2807 Wade Ave",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2807wade.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$1,299,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "3,330 sqft",
+		address: "3302 Gilbert St",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/3302gilbert.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$2,350,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "3,605 sqft",
+		address: "2200 Stamford Ln",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2200stamford.jpg"
+	},
+	{
+		neighborhood: "tarrytown",
+		price: "$825,000",
+		bedrooms: "3 bds",
+		bathrooms: "3 ba",
+		size: "2,052 sqft",
+		address: "2304 Greenlee Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2304greenlee.jpg"
 	}
 ]
 

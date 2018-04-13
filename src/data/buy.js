@@ -322,6 +322,51 @@ const propertiesBuy = [
 		size: "1,156 sqft",
 		address: "2109 Peach Tree St",
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2109peachtree.jpg"
+	},
+	{
+		neighborhood: "westlake",
+		price: "$500,000",
+		bedrooms: "2 bds",
+		bathrooms: "3 ba",
+		size: "1,587 sqft",
+		address: "1821 Westlake Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1821westlake.jpg"
+	},
+	{
+		neighborhood: "westlake",
+		price: "$3,000,000",
+		bedrooms: "4 bds",
+		bathrooms: "4 ba",
+		size: "4,631 sqft",
+		address: "1887 Westlake Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1887westlake.jpg"
+	},
+	{
+		neighborhood: "westlake",
+		price: "$1,800,000",
+		bedrooms: "2 bds",
+		bathrooms: "3 ba",
+		size: "1,960 sqft",
+		address: "2453 Westlake Dr",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2453westlake.jpg"
+	},
+	{
+		neighborhood: "westlake",
+		price: "$6,500,000",
+		bedrooms: "6 bds",
+		bathrooms: "7 ba",
+		size: "10,637 sqft",
+		address: "2705 Island Ledge Cv",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2705island.jpg"
+	},
+	{
+		neighborhood: "westlake",
+		price: "$1,995,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "2,828 sqft",
+		address: "2926 Westlake Cv",
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2926westlake.jpg"
 	}
 ]
 

@@ -21,7 +21,7 @@ Geocode.fromAddress("1303 Hillside Ave Austin TX").then(
 	}
 );
 
-class SimpleMap extends Component {
+class Maps extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
@@ -48,7 +48,7 @@ class SimpleMap extends Component {
 
   render() {
     return (
-      <div style={{ height: '50vh', width: '50%' }}>
+      <div className={this.props.mode != "intro" ? "" : 'hidden'} style={{ height: '50vh', width: '50%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
           defaultCenter={this.state.center}
@@ -70,4 +70,4 @@ class SimpleMap extends Component {
   }
 }
 
-export default SimpleMap;
+export default Maps;

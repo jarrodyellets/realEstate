@@ -7,7 +7,7 @@ const NavBar = (props) => {
 		  <Navbar.Header>
 		    <Navbar.Brand>
 		      <a href="#brand">
-		      	<img className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
+		      	<img onClick={props.changeMode.bind(props.changeMode, "intro")}className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 		      </a>
 		      <div className="logoTitle">Austin's Real Estate Portal</div>
 		    </Navbar.Brand>
@@ -15,11 +15,11 @@ const NavBar = (props) => {
 		  </Navbar.Header>
 		  <Navbar.Collapse>
 		    <Nav pullRight>
-		      <NavItem eventKey={1} href="#">
+		      <NavItem onClick={props.changeMode.bind(props.changeMode, "buy")}eventKey={1} href="#">
 		        Buy
 		      </NavItem>
-		      <NavItem eventKey={2} href="#">
-		        Rent
+		      <NavItem onClick={props.changeMode.bind(props.changeMode, "rent")}eventKey={2} href="#">
+		      	Rent
 		      </NavItem>
 		    </Nav>
 		  </Navbar.Collapse>

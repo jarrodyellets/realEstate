@@ -28,7 +28,7 @@ class Intro extends Component {
 
 	render(){
 		return (
-			<div>
+			<div className={this.props.mode == "intro" ? "" : "hidden"}>
 				<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
 					<div className="titleContainer">
 						<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>

@@ -48,24 +48,26 @@ class Maps extends Component {
 
   render() {
     return (
-      <div className={this.props.mode != "intro" ? "" : 'hidden'} style={{ height: '50vh', width: '50%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
-          defaultCenter={this.state.center}
-          defaultZoom={this.state.zoom}
-        >
-          <AnyReactComponent
-            lat={30.249747}
-            lng={-97.745913}
-            text={house}
-          />
-           <AnyReactComponent
-            lat={30.275}
-            lng={-97.85}
-            text={house}
-          />
-        </GoogleMapReact>
-      </div>
+    	<div className={this.props.mode != "intro" ? "" : 'hidden'}>
+	      <div style={{ height: '50vh', width: '50%' }}>
+	        <GoogleMapReact
+	          bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
+	          defaultCenter={this.state.center}
+	          defaultZoom={this.state.zoom}
+	        >
+	          <AnyReactComponent
+	            lat={30.249747}
+	            lng={-97.745913}
+	            text={house}
+	          />
+	           <AnyReactComponent
+	            lat={30.275}
+	            lng={-97.85}
+	            text={house}
+	          />
+	        </GoogleMapReact>
+	      </div>
+	    </div>
     );
   }
 }

@@ -30,7 +30,7 @@ class App extends Component {
 			<div>
 				<NavBar changeMode={this.changeMode} />
 				<Intro buy={buy} mode={this.state.mode} />
-				<Maps mode={this.state.mode} />
+				{this.state.mode != "intro" ? <Maps mode={this.state.mode} /> : null}
 			</div>
 			)
 	}

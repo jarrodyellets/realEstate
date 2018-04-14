@@ -48,8 +48,7 @@ class Maps extends Component {
 
   render() {
     return (
-    	<div className={this.props.mode != "intro" ? "" : 'hidden'}>
-	      <div style={{ height: '50vh', width: '50%' }}>
+	      <div style={{ height: '100%', width: '60%' }}>
 	        <GoogleMapReact
 	          bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
 	          defaultCenter={this.state.center}
@@ -67,7 +66,6 @@ class Maps extends Component {
 	          />
 	        </GoogleMapReact>
 	      </div>
-	    </div>
     );
   }
 }

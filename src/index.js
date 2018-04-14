@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './components/nav';
 import Intro from './components/intro';
-import Maps from './components/map';
+import PropertyDisplay from './components/PropertyDisplay';
 import buy from './data/buy';
 
 import style from '../public/css/style.css';
@@ -27,10 +27,10 @@ class App extends Component {
 
 	render() {
 		return (
-			<div>
-				<NavBar changeMode={this.changeMode} />
+			<div class={this.state.mode == "intro" ? "" : "wrapper"}>
+				<NavBar changeMode={this.changeMode} mode={this.state.mode} />
 				<Intro buy={buy} mode={this.state.mode} />
-				{this.state.mode != "intro" ? <Maps mode={this.state.mode} /> : null}
+				{this.state.mode != "intro" ? <PropertyDisplay mode={this.state.mode} /> : null}
 			</div>
 			)
 	}

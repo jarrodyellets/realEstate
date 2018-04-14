@@ -2,6 +2,12 @@ body {
 	font-family: 'Varela Round', sans-serif;
 }
 
+.wrapper {
+	height: 100vh;
+	padding-bottom: 50px;
+	overflow-y: hidden;
+}
+
 .navbar {
 	background: #eee;
 	border: none;
@@ -205,5 +211,13 @@ select option {
 	border-radius: 3px;
 	font-weight: 700;
 	font-size: 12px;
+}
+
+.propertyContainer {
+	height: 100%
+}
+
+.propertyGrid {
+	height: 100%;
 }
 

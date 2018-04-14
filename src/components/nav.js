@@ -3,7 +3,7 @@ import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 const NavBar = (props) => {
 	return (
-		<Navbar collapseOnSelect>
+		<Navbar collapseOnSelect fluid={props.mode == "intro" ? false : true}>
 		  <Navbar.Header>
 		    <Navbar.Brand>
 		      <a href="#brand">

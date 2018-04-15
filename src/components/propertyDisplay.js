@@ -11,7 +11,7 @@ class PropertyDisplay extends Component{
 		return(
 			<div className="propertyContainer">
 				<div className="propertyGrid">
-					<Maps />
+					<Maps zoom={this.props.zoom} center={this.props.center} />
 				</div>
 			</div>
 			)

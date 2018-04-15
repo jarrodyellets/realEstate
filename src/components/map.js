@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Geocode from 'react-geocode';
+import Marker from './marker';
 
 let la = 0;
 let lo = 0;
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-const house = <div className="houseIconDiv"><i className="fas fa-home houseIcon"></i><div className="priceMap">$500k</div></div>;
 Geocode.setApiKey("AIzaSyDwxBir2yZyRQ2Zn8MCCY1UL7N-YA6mHwE")
 
 Geocode.fromAddress("1303 Hillside Ave Austin TX").then(
@@ -24,13 +23,6 @@ Geocode.fromAddress("1303 Hillside Ave Austin TX").then(
 class Maps extends Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			center: {
-				lat: 30.266926,
-				lng: -97.750519
-			},
-			zoom: 14
-		};
 
 		this.loadMap = this.loadMap.bind(this);
 	}
@@ -51,18 +43,13 @@ class Maps extends Component {
 	      <div style={{ height: '100%', width: '60%' }}>
 	        <GoogleMapReact
 	          bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
-	          defaultCenter={this.state.center}
-	          defaultZoom={this.state.zoom}
+	          defaultCenter={this.props.center}
+	          defaultZoom={this.props.zoom}
 	        >
-	          <AnyReactComponent
+	          <Marker
 	            lat={30.249747}
 	            lng={-97.745913}
-	            text={house}
-	          />
-	           <AnyReactComponent
-	            lat={30.275}
-	            lng={-97.85}
-	            text={house}
+	            price="$625k"
 	          />
 	        </GoogleMapReact>
 	      </div>

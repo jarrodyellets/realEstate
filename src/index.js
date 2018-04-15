@@ -12,6 +12,11 @@ class App extends Component {
 		super(props);
 		this.state = {
 			mode: "intro",
+			zoom: 13,
+			center: {
+				lat: 30.266926,
+				lng: -97.750519
+			}
 		}
 
 		this.changeMode = this.changeMode.bind(this);
@@ -27,10 +32,10 @@ class App extends Component {
 
 	render() {
 		return (
-			<div class={this.state.mode == "intro" ? "" : "wrapper"}>
+			<div className={this.state.mode == "intro" ? "" : "wrapper"}>
 				<NavBar changeMode={this.changeMode} mode={this.state.mode} />
 				<Intro buy={buy} mode={this.state.mode} />
-				{this.state.mode != "intro" ? <PropertyDisplay mode={this.state.mode} /> : null}
+				{this.state.mode != "intro" ? <PropertyDisplay mode={this.state.mode} zoom={this.state.zoom} center={this.state.center} /> : null}
 			</div>
 			)
 	}

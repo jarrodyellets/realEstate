@@ -11,7 +11,9 @@ class App extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			mode: "intro",
+			intro: true,
+			mode: "buy",
+			value: "Neighborhood",
 			zoom: 13,
 			center: {
 				lat: 30.266926,
@@ -19,23 +21,38 @@ class App extends Component {
 			}
 		}
 
+		this.changeIntro = this.changeIntro.bind(this);
+		this.changeValue = this.changeValue.bind(this);
 		this.changeMode = this.changeMode.bind(this);
 
+	}
+
+	changeIntro(){
+		const intro = this.state.intro
+		this.setState({
+			intro: !intro
+		})
+		console.log(this.state.mode);
 	}
 
 	changeMode(e){
 		this.setState({
 			mode: e
 		})
-		console.log(this.state.mode);
+	}
+
+	changeValue(e) {
+		this.setState({
+			value: e.target.value
+		})
 	}
 
 	render() {
 		return (
-			<div className={this.state.mode == "intro" ? "" : "wrapper"}>
-				<NavBar changeMode={this.changeMode} mode={this.state.mode} />
-				<Intro buy={buy} mode={this.state.mode} />
-				{this.state.mode != "intro" ? <PropertyDisplay mode={this.state.mode} zoom={this.state.zoom} center={this.state.center} /> : null}
+			<div className={this.state.intro ? "" : "wrapper"}>
+				<NavBar changeIntro={this.changeIntro} intro={this.state.intro} mode={this.state.mode} changeMode={this.changeMode} />
+				<Intro buy={buy} intro={this.state.intro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
+				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} /> : null}
 			</div>
 			)
 	}

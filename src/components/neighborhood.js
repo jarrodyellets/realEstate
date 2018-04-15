@@ -3,16 +3,16 @@ import React from 'react';
 const Neighborhood = (props) => {
 	return (
 		<div className="selectDiv">
-			<select className="introSelect">
-				<option value="" disabled selected>Choose Neighborhood</option>
-				<option value="downtown">Downtown</option>
-				<option value="travis-heights">Travis Heights</option>
-				<option value="east-austin">East Austin</option>
-				<option value="rollingwood">Rollingwood</option>
-				<option value="barton-hills">Barton Hills</option>
-				<option value="westlake">Westlake</option>
-				<option value="tarrytown">Tarrytown</option>
-				<option value="hyde-park">Hyde Park</option>
+			<select value={props.value} onChange={props.changeValue} className="introSelect">
+				<option value="Neighborhood" disabled>Choose Neighborhood</option>
+				<option value="Downtown">Downtown</option>
+				<option value="Travis Heights">Travis Heights</option>
+				<option value="East Austin">East Austin</option>
+				<option value="Rollingwood">Rollingwood</option>
+				<option value="Barton Hills">Barton Hills</option>
+				<option value="Westlake">Westlake</option>
+				<option value="Tarrytown">Tarrytown</option>
+				<option value="Hyde Ppark">Hyde Park</option>
 			</select>
 			<button className="selectButton">Submit</button>
 		</div>

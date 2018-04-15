@@ -28,7 +28,7 @@ class Intro extends Component {
 
 	render(){
 		return (
-			<div className={this.props.mode == "intro" ? "" : "hidden"}>
+			<div className={this.props.intro ? "" : "hidden"}>
 				<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
 					<div className="titleContainer">
 						<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>
@@ -36,7 +36,7 @@ class Intro extends Component {
 							<button className={this.state.day ? 'introButton activeButton' : 'introButton unActiveButton'} onClick={this.handleBuyClick}>Buy</button>
 							<button className={this.state.day ? 'introButton unActiveButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
 						</div>
-						<Neighborhood />
+						<Neighborhood value={this.props.value} changeValue={this.props.changeValue} />
 					</div>
 				</div>
 				<Featured buy={this.props.buy} />

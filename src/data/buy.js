@@ -5,7 +5,7 @@ const propertiesBuy = [
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
 		size: "1,566 sqft",
-		address: "84 west 6th street",
+		address: "84 W 6th St",
 		lat: 30.268068,
 		lng: -97.742820,
 		image: "https://www.jarrodyellets.com/images/pillow/buy/84e6th.jpg"

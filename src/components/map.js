@@ -6,7 +6,7 @@ const Maps = (props) => {
 	const currentNeighborhood = props.buy;
 	const houses = currentNeighborhood.map((house, i) => {
 		return(
-        <Marker lat={house.lat} lng={house.lng} price={house.price} />
+        <Marker key={i} lat={house.lat} lng={house.lng} price={house.price} />
 			)
 	});
 

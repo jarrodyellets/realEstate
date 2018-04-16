@@ -5,13 +5,15 @@ const CardDisplay = (props) => {
 	const neighborhood = props.buy
 	const cards = neighborhood.map((card, i) => {
 		return (
-			<Card img={card.image}
-						price={card.price}
-						beds={card.bedrooms}
-						baths={card.bathrooms}
-						size={card.size}
-						address={card.address}
-						/>
+			<div key={i}>
+				<Card img={card.image}
+							price={card.price}
+							beds={card.bedrooms}
+							baths={card.bathrooms}
+							size={card.size}
+							address={card.address}
+							/>
+			</div>
 			)
 	});
 

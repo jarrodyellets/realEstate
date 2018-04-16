@@ -32,7 +32,6 @@ class App extends Component {
 		this.setState({
 			intro: !intro
 		})
-		console.log(this.state.mode);
 	}
 
 	changeMode(e){
@@ -52,7 +51,7 @@ class App extends Component {
 			<div className={this.state.intro ? "" : "wrapper"}>
 				<NavBar changeIntro={this.changeIntro} intro={this.state.intro} mode={this.state.mode} changeMode={this.changeMode} />
 				<Intro buy={buy} intro={this.state.intro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
-				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} /> : null}
+				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} buy={buy} neighborhood={this.state.neighborhood} /> : null}
 			</div>
 			)
 	}

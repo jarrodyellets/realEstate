@@ -5,6 +5,7 @@ body {
 .wrapper {
 	height: 100vh;
 	padding-bottom: 50px;
+	overflow: hidden;
 }
 
 .navbar {
@@ -223,5 +224,18 @@ select option {
 
 .propertyGrid {
 	height: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+.cardDisplay {
+	position: relative;
+	display: block;
+	overflow-y: scroll;
+	flex-grow: 1;
+	-webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+	z-index: 5;
 }
 

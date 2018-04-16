@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Maps from './map';
+import CardDisplay from './cardDisplay';
 
 class PropertyDisplay extends Component{
 	constructor(props){
@@ -12,6 +13,7 @@ class PropertyDisplay extends Component{
 			<div className="propertyContainer">
 				<div className="propertyGrid">
 					<Maps zoom={this.props.zoom} center={this.props.center} buy={this.props.buy} neighborhood={this.props.neighborhood} />
+					<CardDisplay neighborhood={this.props.neighborhood} buy={this.props.buy} />
 				</div>
 			</div>
 			)

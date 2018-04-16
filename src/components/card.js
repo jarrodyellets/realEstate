@@ -11,8 +11,9 @@ class Card extends Component {
 			backgroundImage: 'url(' + this.props.img + ')',
 			backgroundSize: 'cover',
 			backgroundPosition: 'center',
-			width: '400px',
-			height: '200px'
+			width: '100%',
+			height: '200px',
+			border: '2px solid #eee'
 		}
 		return(
 			<div className="card" style={cardStyle}>

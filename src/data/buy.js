@@ -71,9 +71,9 @@ const propertiesBuy = [
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
 		size: "1,459 sqft",
-		address: "40 N River St",
-		lat: 30.265895,
-		lng: -97.737574,
+		address: "710 Colorado St",
+		lat: 30.270137,
+		lng: -97.743750,
 		image: "https://www.jarrodyellets.com/images/pillow/buy/40nriver.jpg"
 	},
 	{
@@ -346,10 +346,10 @@ const propertiesBuy = [
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
 		size: "2,436 sqft",
-		address: "2404 Homedale Cir",
+		address: "2405 Homedale Cir",
 		lat: 30.253044,
 		lng: -97.781594,
-		image: "https://www.jarrodyellets.com/images/pillow/buy/2404homedale.jpg"
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2405homedale.jpg"
 	},
 	{
 		neighborhood: "barton-hills",
@@ -619,13 +619,102 @@ const propertiesBuy = [
 		neighborhood: "hyde-park",
 		price: "$525,000",
 		bedrooms: "3 bds",
-		bathrooms: "2]3 ba",
+		bathrooms: "2 ba",
 		size: "1,538 sqft",
 		address: "402 W 51st St",
 		lat: 30.317322,
 		lng: -97.726925,
 		image: "https://www.jarrodyellets.com/images/pillow/buy/402w51st.jpg"
-	}
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$329,000",
+		bedrooms: "2 bds",
+		bathrooms: "2 ba",
+		size: "813 sqft",
+		address: "704 W 21ST St",
+		lat: 30.284432,
+		lng: -97.745872,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/704w21st.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$190,000",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "449 sqft",
+		address: "701 W 24TH St",
+		lat: 30.287863,
+		lng: -97.745124,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/701w24th.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$242,900",
+		bedrooms: "2 bds",
+		bathrooms: "2 ba",
+		size: "710 sqft",
+		address: "2408 Longview St",
+		lat: 30.289011,
+		lng: -97.751134,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2408longview.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$349,000",
+		bedrooms: "2 bds",
+		bathrooms: "2 ba",
+		size: "905 sqft",
+		address: "706 W 22nd St",
+		lat: 30.285627,
+		lng: -97.745723,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/706w22nd.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$355,000",
+		bedrooms: "2 bds",
+		bathrooms: "2 ba",
+		size: "1,020 sqft",
+		address: "2529 Rio Grande St",
+		lat: 30.290385,
+		lng: -97.743934,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2529riogrande.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$175,000",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "500 sqft",
+		address: "1010 W 23rd St",
+		lat: 30.287399,
+		lng: -97.749076,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1010w23rd.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$359,900",
+		bedrooms: "1 bd",
+		bathrooms: "1 ba",
+		size: "985 sqft",
+		address: "2205 N Lamar Blvd",
+		lat: 30.286500,
+		lng: -97.752754,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/2205nlamar.jpg"
+	},
+	{
+		neighborhood: "west-campus",
+		price: "$650,000",
+		bedrooms: "2 bds",
+		bathrooms: "3 ba",
+		size: "1,964 sqft",
+		address: "1807 San Gabriel St",
+		lat: 30.282903,
+		lng: -97.748004,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/1807sangabriel.jpg"
+	},
+
 ]
 
 export default propertiesBuy;

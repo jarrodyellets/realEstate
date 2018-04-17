@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './card';
 
 const CardDisplay = (props) => {
-	const neighborhood = props.buy
+	const neighborhood = props.neighborhood
 	const cards = neighborhood.map((card, i) => {
 		return (
 			<div key={i}>

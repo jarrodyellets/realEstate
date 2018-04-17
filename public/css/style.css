@@ -32,7 +32,7 @@ body {
 	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
-	z-index: 1;
+	z-index: 7;
 }
 
 .logoTitle {
@@ -242,3 +242,33 @@ select option {
 	padding: 3px;
 }
 
+.sortNav {
+	position: relative;	
+	width: 100%;
+	min-height: 50px;
+	height: 50px;
+	background-color: rgba(5, 56, 107, .8);
+	display: flex;
+	align-items: center;
+	padding-left: 120px;
+	color: #eee;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	z-index: 6;
+}
+
+.sortSelect {
+	height: 70%;
+	margin: 0 5px;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #eee;
+}
+
+.sortButton {
+	background: rgba(0, 0, 0, 0);
+	padding: 10px;
+	margin: 0 5px;
+	border: 1px solid #eee;
+	height: 70%;
+}

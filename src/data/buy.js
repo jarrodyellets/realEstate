@@ -1,6 +1,6 @@
 const propertiesBuy = [
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$899,999",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -11,7 +11,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/84e6th.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$410,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -22,7 +22,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/121colorado.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$735,000",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -33,7 +33,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/360nueces.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$1,629,999",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",
@@ -44,7 +44,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/98sanjacinto.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$449,999",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -55,7 +55,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/603davis.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$824,900",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -66,7 +66,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/210lavaca.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$519,000",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -77,7 +77,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/40nriver.jpg"
 	},
 	{
-		neighborhood: "downtown",
+		neighborhood: "Downtown",
 		price: "$1,968,570",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -88,7 +88,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/70rainey.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$1,570,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -99,7 +99,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1303hillside.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$528,600",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",
@@ -110,7 +110,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1318newning.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$845,000",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",
@@ -121,7 +121,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/211wjohanna.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$585,000",
 		bedrooms: "2 bds",
 		bathrooms: "1 ba",
@@ -132,7 +132,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/413wmary.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$599,900",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -143,7 +143,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/405wliveoak.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$1,275,000",
 		bedrooms: "3 bds",
 		bathrooms: "4 ba",
@@ -154,7 +154,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2117brackenridge.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$949,500",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -165,7 +165,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2115brackenridge.jpg"
 	},
 	{
-		neighborhood: "travis-heights",
+		neighborhood: "Travis Heights",
 		price: "$229,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -176,7 +176,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2020scongress.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$750,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -187,7 +187,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1307e13th.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$600,000",
 		bedrooms: "2 bds",
 		bathrooms: "1 ba",
@@ -198,7 +198,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1711e7th.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$1,150,000",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -209,7 +209,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1307waller.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$375,000",
 		bedrooms: "2 bds",
 		bathrooms: "1 ba",
@@ -220,7 +220,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1903newyork.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$745,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -231,7 +231,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1113e3rd.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$320,000",
 		bedrooms: "2 bds",
 		bathrooms: "1 ba",
@@ -242,7 +242,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1208chestnut.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$675,000",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -253,7 +253,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1304leona.jpg"
 	},
 	{
-		neighborhood: "east-austin",
+		neighborhood: "East Austin",
 		price: "$689,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -264,7 +264,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/708northwestern.jpg"
 	},
 	{
-		neighborhood: "rollingwood",
+		neighborhood: "Rollingwood",
 		price: "$11,500,000",
 		bedrooms: "6 bds",
 		bathrooms: "9 ba",
@@ -275,7 +275,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/3148abovestratford.jpg"
 	},
 	{
-		neighborhood: "rollingwood",
+		neighborhood: "Rollingwood",
 		price: "$1,854,000",
 		bedrooms: "5 bds",
 		bathrooms: "4 ba",
@@ -286,7 +286,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/3125abovestratford.jpg"
 	},
 	{
-		neighborhood: "rollingwood",
+		neighborhood: "Rollingwood",
 		price: "$2,000,000",
 		bedrooms: "5 bds",
 		bathrooms: "5 ba",
@@ -297,7 +297,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/124birnamwood.jpg"
 	},
 	{
-		neighborhood: "rollingwood",
+		neighborhood: "Rollingwood",
 		price: "$800,000",
 		bedrooms: "3 bds",
 		bathrooms: "1 ba",
@@ -308,7 +308,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/403ridgewood.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$999,999",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -319,7 +319,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1702cresthaven.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$549,500",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -330,7 +330,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2607trailside.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$900,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -341,7 +341,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1802westridge.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$775,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -352,7 +352,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2405homedale.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$589,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -363,7 +363,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2409elmglen.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$875,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -374,7 +374,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1001kinney.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$1,350,000",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -385,7 +385,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2909barton.jpg"
 	},
 	{
-		neighborhood: "barton-hills",
+		neighborhood: "Barton Hills",
 		price: "$600,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -396,7 +396,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2109peachtree.jpg"
 	},
 	{
-		neighborhood: "westlake",
+		neighborhood: "Westlake",
 		price: "$500,000",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",
@@ -407,7 +407,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1821westlake.jpg"
 	},
 	{
-		neighborhood: "westlake",
+		neighborhood: "Westlake",
 		price: "$3,000,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -418,7 +418,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1887westlake.jpg"
 	},
 	{
-		neighborhood: "westlake",
+		neighborhood: "Westlake",
 		price: "$1,800,000",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",
@@ -429,7 +429,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2453westlake.jpg"
 	},
 	{
-		neighborhood: "westlake",
+		neighborhood: "Westlake",
 		price: "$6,500,000",
 		bedrooms: "6 bds",
 		bathrooms: "7 ba",
@@ -440,7 +440,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2705island.jpg"
 	},
 	{
-		neighborhood: "westlake",
+		neighborhood: "Westlake",
 		price: "$1,995,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -451,7 +451,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2926westlake.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$1,595,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -462,7 +462,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/3411bonnie.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$3,250,000",
 		bedrooms: "7 bds",
 		bathrooms: "9 ba",
@@ -473,7 +473,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2501elgreco.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$1,289,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -484,7 +484,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2621exposition.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$1,250,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -495,7 +495,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2501tower.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$1,200,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -506,7 +506,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2807wade.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$1,299,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -517,7 +517,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/3302gilbert.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$2,350,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -528,7 +528,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2200stamford.jpg"
 	},
 	{
-		neighborhood: "tarrytown",
+		neighborhood: "Tarrytown",
 		price: "$825,000",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -539,7 +539,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2304greenlee.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$215,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -550,7 +550,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/3815guadalupe.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$625,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -561,7 +561,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/4527avenueh.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$539,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -572,7 +572,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/4412avenuec.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$425,000",
 		bedrooms: "4 bds",
 		bathrooms: "3 ba",
@@ -583,7 +583,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/4502avenuef.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$660,000",
 		bedrooms: "4 bds",
 		bathrooms: "4 ba",
@@ -594,7 +594,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/4412barrow.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$599,000",
 		bedrooms: "1 bd",
 		bathrooms: "2 ba",
@@ -605,7 +605,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/4522caswell.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$574,000",
 		bedrooms: "3 bds",
 		bathrooms: "3 ba",
@@ -616,7 +616,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/701e49th.jpg"
 	},
 	{
-		neighborhood: "hyde-park",
+		neighborhood: "Hyde Park",
 		price: "$525,000",
 		bedrooms: "3 bds",
 		bathrooms: "2 ba",
@@ -627,7 +627,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/402w51st.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$329,000",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -638,7 +638,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/704w21st.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$190,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -649,7 +649,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/701w24th.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$242,900",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -660,7 +660,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2408longview.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$349,000",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -671,7 +671,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/706w22nd.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$355,000",
 		bedrooms: "2 bds",
 		bathrooms: "2 ba",
@@ -682,7 +682,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2529riogrande.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$175,000",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -693,7 +693,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/1010w23rd.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$359,900",
 		bedrooms: "1 bd",
 		bathrooms: "1 ba",
@@ -704,7 +704,7 @@ const propertiesBuy = [
 		image: "https://www.jarrodyellets.com/images/pillow/buy/2205nlamar.jpg"
 	},
 	{
-		neighborhood: "west-campus",
+		neighborhood: "West Campus",
 		price: "$650,000",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",

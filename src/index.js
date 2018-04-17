@@ -15,6 +15,9 @@ class App extends Component {
 			intro: true,
 			mode: "buy",
 			value: "Neighborhood",
+			neighborhood: buy,
+			beds: "beds",
+			price: "price",
 			zoom: 13,
 			center: {
 				lat: 30.266926,
@@ -25,6 +28,8 @@ class App extends Component {
 		this.changeIntro = this.changeIntro.bind(this);
 		this.changeValue = this.changeValue.bind(this);
 		this.changeMode = this.changeMode.bind(this);
+		this.changeBeds = this.changeBeds.bind(this);
+		this.changePrice = this.changePrice.bind(this);
 
 	}
 
@@ -42,18 +47,36 @@ class App extends Component {
 	}
 
 	changeValue(e) {
+		const filteredNeighborhood = buy.filter(function(house){
+			return house.neighborhood == e.target.value
+		})
+		let newNeighborhood = e.target.value == "Neighborhood" ? buy : filteredNeighborhood;
 		this.setState({
-			value: e.target.value
+			value: e.target.value,
+			neighborhood: newNeighborhood
+		})
+	}
+
+	changeBeds(e){
+		this.setState({
+			beds: e.target.value
+		})
+	}
+
+	changePrice(e){
+		this.setState({
+			price: Number((e.target.value).replace(/[^\d.]/g, ''))
 		})
 	}
 
 	render() {
+		console.log(this.state.neighborhood);
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
 				<NavBar changeIntro={this.changeIntro} intro={this.state.intro} mode={this.state.mode} changeMode={this.changeMode} />
 				{!this.state.intro ?<SortNav value={this.state.value} changeValue={this.changeValue} />: null}
 				<Intro buy={buy} intro={this.state.intro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
-				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} buy={buy} neighborhood={this.state.neighborhood} /> : null}
+				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} value={this.state.value} buy={buy} neighborhood={this.state.neighborhood} /> : null}
 			</div>
 			)
 	}

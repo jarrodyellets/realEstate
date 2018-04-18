@@ -36,7 +36,7 @@ class Intro extends Component {
 							<button className={this.state.day ? 'introButton activeButton' : 'introButton unActiveButton'} onClick={this.handleBuyClick}>Buy</button>
 							<button className={this.state.day ? 'introButton unActiveButton' : 'introButton activeButton'} onClick={this.handleRentClick}>Rent</button>
 						</div>
-						<Neighborhood value={this.props.value} changeValue={this.props.changeValue} />
+						<Neighborhood value={this.props.value} changeValue={this.props.changeValue} changeIntro={this.props.changeIntro} />
 					</div>
 				</div>
 				<Featured buy={this.props.buy} />

@@ -15,7 +15,7 @@ const Neighborhood = (props) => {
 				<option value="Hyde Park">Hyde Park</option>
 				<option value="West Campus">West Campus</option>
 			</select>
-			<button className="selectButton">Submit</button>
+			<button className="selectButton" onClick={props.changeIntro} >Submit</button>
 		</div>
 		)
 }

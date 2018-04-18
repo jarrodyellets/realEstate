@@ -47,20 +47,35 @@ class App extends Component {
 	}
 
 	changeValue(e) {
-		const filteredNeighborhood = buy.filter(function(house){
-			return house.neighborhood == e.target.value
-		})
-		let newNeighborhood = e.target.value == "Neighborhood" ? buy : filteredNeighborhood;
 		this.setState({
-			value: e.target.value,
-			neighborhood: newNeighborhood
+			value: e.target.value
+		}, () => {
+			this.changeNeighborhood();
 		})
+		
 	}
 
 	changeBeds(e){
 		this.setState({
 			beds: e.target.value
+		}, () => {
+			this.changeNeighborhood();
 		})
+		
+	}
+
+	changeNeighborhood(){
+		const neighborhood = this.state.value;
+		const beds = this.state.beds
+		const filteredNeighborhood = buy.filter(function(house){
+		 return neighborhood != "Neighborhood" ? house.neighborhood == neighborhood : buy
+		})
+		const newfilteredNeighborhood = filteredNeighborhood.filter(function(house){
+			return beds != "beds" ? house.bedrooms == beds : filteredNeighborhood
+		})
+		this.setState({
+			neighborhood: newfilteredNeighborhood
+		})	
 	}
 
 	changePrice(e){
@@ -74,8 +89,8 @@ class App extends Component {
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
 				<NavBar changeIntro={this.changeIntro} intro={this.state.intro} mode={this.state.mode} changeMode={this.changeMode} />
-				{!this.state.intro ?<SortNav value={this.state.value} changeValue={this.changeValue} />: null}
-				<Intro buy={buy} intro={this.state.intro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
+				{!this.state.intro ?<SortNav value={this.state.value} changeValue={this.changeValue} beds={this.state.beds} price={this.state.price} changeBeds={this.changeBeds} />: null}
+				<Intro buy={buy} intro={this.state.intro} changeIntro={this.changeIntro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
 				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} value={this.state.value} buy={buy} neighborhood={this.state.neighborhood} /> : null}
 			</div>
 			)

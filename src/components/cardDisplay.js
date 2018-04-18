@@ -5,7 +5,7 @@ const CardDisplay = (props) => {
 	const neighborhood = props.neighborhood
 	const cards = neighborhood.map((card, i) => {
 		return (
-			<div key={i}>
+			<div className="cardDiv" key={i}>
 				<Card img={card.image}
 							price={card.price}
 							beds={card.bedrooms}

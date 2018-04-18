@@ -19,7 +19,7 @@ const CardDisplay = (props) => {
 	return (
 		<div className="cardDisplay">
 			<div className="cardHeader">
-				<h2>{props.value} Real Estate</h2>
+				<h2 className="cardHeaderTitle">{props.value} Real Estate</h2>
 				<div>{props.neighborhood.length} homes for sale</div>
 			</div>
 			{cards}

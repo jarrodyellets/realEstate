@@ -207,6 +207,11 @@ select option {
 	color: red;
 }
 
+.selectedHouseIcon {
+	font-size: 30px;
+	color: #5CDB95;
+}
+
 .priceMap {
 	color: #555;
 	background: #fdfdfd;
@@ -279,4 +284,8 @@ select option {
 
 .cardHeader {
 	grid-column: span 2;
+}
+
+.cardHeaderTitle {
+	font-weight: 700;
 }

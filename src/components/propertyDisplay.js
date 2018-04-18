@@ -13,7 +13,7 @@ class PropertyDisplay extends Component{
 			<div className="propertyContainer">
 				<div className="propertyGrid">
 					<Maps zoom={this.props.zoom} center={this.props.center} buy={this.props.buy} neighborhood={this.props.neighborhood} value={this.props.value} />
-					<CardDisplay neighborhood={this.props.neighborhood} buy={this.props.buy} />
+					<CardDisplay neighborhood={this.props.neighborhood} buy={this.props.buy} value={this.props.value} />
 				</div>
 			</div>
 			)

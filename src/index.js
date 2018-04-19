@@ -5,6 +5,7 @@ import Intro from './components/intro';
 import PropertyDisplay from './components/PropertyDisplay';
 import SortNav from './components/sortNav';
 import buy from './data/buy';
+import neighborhoodData from './data/neighborhoodData';
 
 import style from '../public/css/style.css';
 
@@ -18,6 +19,7 @@ class App extends Component {
 			neighborhood: buy,
 			beds: "beds",
 			price: "price",
+			id: null,
 			zoom: 13,
 			center: {
 				lat: 30.266926,
@@ -30,6 +32,7 @@ class App extends Component {
 		this.changeMode = this.changeMode.bind(this);
 		this.changeBeds = this.changeBeds.bind(this);
 		this.changePrice = this.changePrice.bind(this);
+		this.changeId = this.changeId.bind(this);
 
 	}
 
@@ -78,7 +81,9 @@ class App extends Component {
 			return price != "price" ? Number((house.price).replace(/[^\d.]/g, '')) <= Number((price).replace(/[^\d.]/g, '')) : filteredNeighborhood
 		})
 		this.setState({
-			neighborhood: displayedNeighborhood
+			neighborhood: displayedNeighborhood,
+			center: neighborhoodData[this.state.value.replace(/\s/g, '')],
+			zoom: neighborhood == "Austin" ? 13 : 15
 		})	
 	}
 
@@ -90,14 +95,19 @@ class App extends Component {
 		})
 	}
 
+	changeId(e){
+		this.setState({
+			id: e
+		})
+	}
+
 	render() {
-		console.log(this.state.neighborhood);
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
 				<NavBar changeIntro={this.changeIntro} intro={this.state.intro} mode={this.state.mode} changeMode={this.changeMode} />
 				{!this.state.intro ?<SortNav value={this.state.value} changeValue={this.changeValue} beds={this.state.beds} price={this.state.price} changeBeds={this.changeBeds} changePrice={this.changePrice} />: null}
 				<Intro buy={buy} intro={this.state.intro} changeIntro={this.changeIntro} value={this.state.value} changeValue={this.changeValue} mode={this.state.mode} changeMode={this.changeMode} />
-				{!this.state.intro ? <PropertyDisplay mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} value={this.state.value} buy={buy} neighborhood={this.state.neighborhood} /> : null}
+				{!this.state.intro ? <PropertyDisplay id={this.state.id} changeId={this.changeId} mode={this.state.intro} zoom={this.state.zoom} center={this.state.center} value={this.state.value} buy={buy} neighborhood={this.state.neighborhood} /> : null}
 			</div>
 			)
 	}

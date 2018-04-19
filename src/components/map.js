@@ -4,8 +4,8 @@ import Marker from './marker';
 
 const Maps = (props) => {
 	const houses = props.neighborhood.map((house, i) => {
-		return(
-        <Marker key={i} lat={house.lat} lng={house.lng} price={house.price} />
+		return( 
+       <Marker key={i} id={i} lat={house.lat} lng={house.lng} price={house.price} stateId={props.id} />
 			)
 	});
 
@@ -13,8 +13,8 @@ const Maps = (props) => {
 	  <div style={{ height: '100%', width: '60%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
-        defaultCenter={props.center}
-        defaultZoom={props.zoom}
+        center={props.center}
+        zoom={props.zoom}
       >
         {houses}
       </GoogleMapReact>

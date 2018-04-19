@@ -34,11 +34,6 @@ const SortNav = (props) => {
 				<option value="4 bds">4</option>
 				<option value="5 bds">5+</option>
 			</select>
-			<select value={props.beds} onChange={props.changeBeds} className="sortSelect ">
-				<option value="beds">Sort</option>
-				<option value="1 bd">Price Highest First</option>
-				<option value="2 bds">Price Lowerest First</option>
-			</select>
 		</div>
 		)
 }

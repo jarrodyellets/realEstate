@@ -12,7 +12,8 @@ class Card extends Component {
 			backgroundSize: 'cover',
 			backgroundPosition: 'center',
 			width: '100%',
-			height: '200px'
+			height: '200px',
+			cursor: 'pointer'
 		}
 		return(
 			<div className="card" style={cardStyle}>

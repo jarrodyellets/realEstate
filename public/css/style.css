@@ -202,14 +202,20 @@ select option {
 	cursor: pointer;
 }
 
+.selectedHouseDiv {
+	position: relative;
+	z-index: 5;
+}
+
 .houseIcon {
 	font-size: 24px;
 	color: red;
 }
 
 .selectedHouseIcon {
-	font-size: 30px;
-	color: #5CDB95;
+	position: relative;
+	font-size: 36px;
+	color: #05386b;
 }
 
 .priceMap {
@@ -239,7 +245,7 @@ select option {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 100px;
+	grid-template-rows: auto;
 	grid-auto-rows: 200px;
 	grid-gap: 3px;
 	overflow-y: scroll;
@@ -288,4 +294,15 @@ select option {
 
 .cardHeaderTitle {
 	font-weight: 700;
+	display: inline-block;
+	margin: 20px 30px 0 0;
+}
+
+.headerLinksDiv {
+	margin: 20px 0;
+}
+
+.headerLinks {
+	font-size: 18px;
+	margin-right: 20px;
 }

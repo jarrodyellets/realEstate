@@ -307,3 +307,17 @@ select option {
 	font-size: 18px;
 	margin-right: 20px;
 }
+
+.housePopUp {
+	position: absolute;
+	top: -50px;
+	width: 80px;
+	height: 40px;
+	display: flex;
+}
+
+.popUpImg {
+	width: 100%;
+}
+
+

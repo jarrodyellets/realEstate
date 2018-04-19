@@ -12,8 +12,18 @@ class PropertyDisplay extends Component{
 		return(
 			<div className="propertyContainer">
 				<div className="propertyGrid">
-					<Maps zoom={this.props.zoom} center={this.props.center} buy={this.props.buy} neighborhood={this.props.neighborhood} value={this.props.value} id={this.props.id} />
-					<CardDisplay neighborhood={this.props.neighborhood} buy={this.props.buy} value={this.props.value} id={this.props.id} changeId={this.props.changeId} />
+					<Maps zoom={this.props.zoom} 
+								center={this.props.center} 
+								buy={this.props.buy} 
+								neighborhood={this.props.neighborhood} 
+								value={this.props.value} 
+								id={this.props.id}
+								changeId={this.props.changeId} />
+					<CardDisplay neighborhood={this.props.neighborhood} 
+											 buy={this.props.buy} 
+											 value={this.props.value} 
+											 id={this.props.id} 
+											 changeId={this.props.changeId} />
 				</div>
 			</div>
 			)

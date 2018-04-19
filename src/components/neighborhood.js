@@ -4,7 +4,7 @@ const Neighborhood = (props) => {
 	return (
 		<div className="selectDiv">
 			<select value={props.value} onChange={props.changeValue} className="introSelect">
-				<option value="Neighborhood" disabled>Choose Neighborhood</option>
+				<option value="Austin" disabled>Choose Neighborhood</option>
 				<option value="Downtown">Downtown</option>
 				<option value="Travis Heights">Travis Heights</option>
 				<option value="East Austin">East Austin</option>

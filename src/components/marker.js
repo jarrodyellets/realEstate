@@ -3,7 +3,7 @@ import Card from './card';
 
 const Marker = (props) => {
 	return (
-		<div className={props.stateId == props.id ? "houseIconDiv selectedHouseDiv" : "houseIconDiv"} 
+		<div className={props.stateId == props.id || props.hoverId == props.id ? "houseIconDiv selectedHouseDiv" : "houseIconDiv"} 
 			 	 onMouseOver={props.changeHoverId.bind(props.changeHoverId, props.id)} 
 			 	 onMouseLeave={props.changeHoverId.bind(props.changeHoverId, null)}>
 			<div className={props.hoverId == props.id ? "housePopUp" : "hidden"}>

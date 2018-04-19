@@ -23,8 +23,7 @@ const Maps = (props) => {
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyC0EL0VwCZ8DWy0_Xb9FG5nrFsUp6iMS7o" }}
         center={props.center}
-        zoom={props.zoom}
-      >
+        zoom={props.zoom}>
         {houses}
       </GoogleMapReact>
     </div>

@@ -205,7 +205,7 @@ select option {
 
 .selectedHouseDiv {
 	position: relative;
-	z-index: 5;
+	z-index: 10;
 }
 
 .houseIcon {
@@ -220,6 +220,7 @@ select option {
 }
 
 .priceMap {
+	position: relative;
 	color: #555;
 	background: #fdfdfd;
 	border-radius: 3px;
@@ -314,6 +315,7 @@ select option {
 	width: 80px;
 	height: 40px;
 	display: flex;
+	z-index: 10;
 }
 
 .popUpImg {

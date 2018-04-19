@@ -12,7 +12,9 @@ const Maps = (props) => {
        				 price={house.price} 
        				 stateId={props.id} 
        				 neighborhood={props.neighborhood}
-       				 changeId={props.changeId} />
+       				 changeId={props.changeId}
+       				 hoverId={props.hoverId}
+       				 changeHoverId={props.changeHoverId} />
 			)
 	});
 

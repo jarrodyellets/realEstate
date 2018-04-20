@@ -1,6 +1,6 @@
 const neightborhoodData = {
 		Austin: {
-				lat: 30.266926,
+				lat: 30.274726,
 				lng: -97.750519
 			},
 		Downtown: {

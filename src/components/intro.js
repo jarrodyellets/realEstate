@@ -29,6 +29,7 @@ class Intro extends Component {
 	render(){
 		return (
 			<div className={this.props.intro ? "" : "hidden"}>
+				<div className="preload"></div>
 				<div className={this.state.day ? 'main austinDay' : 'main austinNight'}>
 					<div className="titleContainer">
 						<div className="introTitle">Find your {this.state.day ? 'next house' : 'new rental'}</div>

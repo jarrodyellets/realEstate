@@ -15,6 +15,7 @@ class App extends Component {
 		this.state = {
 			intro: true,
 			mode: "buy",
+			ascending: true,
 			value: "Austin",
 			neighborhood: buy,
 			beds: "beds",
@@ -35,6 +36,7 @@ class App extends Component {
 		this.changePrice = this.changePrice.bind(this);
 		this.changeId = this.changeId.bind(this);
 		this.changeHoverId = this.changeHoverId.bind(this);
+		this.changeSort = this.changeSort.bind(this);
 
 	}
 
@@ -107,6 +109,13 @@ class App extends Component {
 		})
 	}
 
+	changeSort(){
+		const sort = this.state.ascending;
+		this.setState({
+			ascending: !sort
+		})
+	}
+
 	render() {
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
@@ -134,6 +143,8 @@ class App extends Component {
 																							value={this.state.value}
 																							buy={buy}
 																							neighborhood={this.state.neighborhood}
+																							ascending={this.state.ascending}
+																							changeSort={this.changeSort}
 																							hoverId={this.state.hoverId}
 																							changeHoverId={this.changeHoverId} /> : null}
 			</div>

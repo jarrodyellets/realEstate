@@ -253,7 +253,7 @@ select option {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: auto;
+	grid-template-rows: 135px;
 	grid-auto-rows: 200px;
 	grid-gap: 3px;
 	overflow-y: scroll;
@@ -298,6 +298,7 @@ select option {
 
 .cardHeader {
 	grid-column: span 2;
+	color: #05386b;
 }
 
 .cardHeaderTitle {
@@ -315,6 +316,7 @@ select option {
 	margin-right: 20px;
 	font-weight: 700;
 	cursor: pointer;
+	padding-bottom: 10px;
 }
 
 .housePopUp {
@@ -358,4 +360,8 @@ select option {
 	color: #333;
 	text-align: center;
 	line-height: 15px;
+}
+
+.underline {
+	border-bottom: 3px solid #05386b;
 }

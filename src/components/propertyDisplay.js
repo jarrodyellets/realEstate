@@ -23,7 +23,9 @@ class PropertyDisplay extends Component{
 								changeHoverId={this.props.changeHoverId} />
 					<CardDisplay neighborhood={this.props.neighborhood} 
 											 buy={this.props.buy} 
-											 value={this.props.value} 
+											 value={this.props.value}
+											 ascending={this.props.ascending}
+											 changeSort={this.props.changeSort} 
 											 id={this.props.id} 
 											 changeId={this.props.changeId} />
 				</div>

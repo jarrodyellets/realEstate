@@ -44,9 +44,10 @@ class App extends Component {
 	changeIntro(){
 		const intro = this.state.intro
 		this.setState({
-			intro: !intro
+			intro: !intro,
 		}, () => {
 			this.changeNeighborhood();
+			this.state.intro ? this.changeMode("") : null;
 		})
 	}
 

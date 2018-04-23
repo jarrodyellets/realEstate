@@ -88,6 +88,94 @@ const rent = [
 	image: "https://www.jarrodyellets.com/images/pillow/rent/800brazos.jpg"
 },
 {
+	neighborhood: "Travis Heights",
+	price: "$1,325",
+	bedrooms: "1 bd",
+	bathrooms: "1 ba",
+	size: "550 sqft",
+	address: "1604 E Side Dr",
+	lat: 30.245933,
+	lng: -97.745413,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1604eside.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$2,029",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,150 sqft",
+	address: "1241 S Congress Ave",
+	lat: 30.251397,
+	lng: -97.748439,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1241scongress.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$4,999",
+	bedrooms: "3 bds",
+	bathrooms: "3 ba",
+	size: "1,924 sqft",
+	address: "1704 Nickerson St",
+	lat: 30.246371,
+	lng: -97.749883,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1704nickerson.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$3,950",
+	bedrooms: "3 bds",
+	bathrooms: "2.5 ba",
+	size: "2,164 sqft",
+	address: "1704 Newning Ave",
+	lat: 30.245785,
+	lng: -97.746912,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1704newning.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$1,650",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,100 sqft",
+	address: "2106 Nickerson St",
+	lat: 30.242602,
+	lng: -97.751495,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2106nickerson.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$4,995",
+	bedrooms: "3 bds",
+	bathrooms: "2.5 ba",
+	size: "1,952 sqft",
+	address: "305 E Live Oak St",
+	lat: 30.240762,
+	lng: -97.750461,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/304eliveoak.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$2,400",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,808 sqft",
+	address: "1803 Alta Vista Ave",
+	lat: 30.242762,
+	lng: -97.743315,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1808altavista.jpg"
+},
+{
+	neighborhood: "Travis Heights",
+	price: "$3,450",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "2,000 sqft",
+	address: "1610 Eva St",
+	lat: 30.247589,
+	lng: -97.752005,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1610eva.jpg"
+},
+{
 	neighborhood: "East Austin",
 	price: "$1,195",
 	bedrooms: "1 bd",

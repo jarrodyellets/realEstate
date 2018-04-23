@@ -7,7 +7,7 @@ const NavBar = (props) => {
 		  <Navbar.Header>
 		    <Navbar.Brand>
 		      <a href="#brand">
-		      	<img onClick={!props.intro ? props.changeIntro: null}className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
+		      	<img onClick={!props.intro ? props.changeIntro : null} className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 		      </a>
 		      <div className="logoTitle">Austin's Real Estate Portal</div>
 		    </Navbar.Brand>
@@ -16,10 +16,10 @@ const NavBar = (props) => {
 		  <Navbar.Collapse>
 		    <Nav pullRight>
 		      <NavItem onClick={() => {props.changeMode("buy"); props.intro ? props.changeIntro(): null}} eventKey={1} href="#">
-		        <div className={props.mode == "buy" ? "buyLinks underline" : "buyLinks"}>Buy</div>
+		        <div className={props.mode == "buy" ? "buyLinks underline" :"buyLinks"}>Buy</div>
 		      </NavItem>
 		      <NavItem onClick={() => {props.changeMode("rent"); props.intro ? props.changeIntro(): null}} eventKey={2} href="#">
-		      	<div className={props.mode == "rent" ? "buyLinks underline" : "buyLinks"}>Rent</div>
+		      	<div className={props.mode == "rent" ? "buylinks underline" : "buyLinks"}>Rent</div>
 		      </NavItem>
 		    </Nav>
 		  </Navbar.Collapse>

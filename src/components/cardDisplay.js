@@ -12,6 +12,7 @@ const CardDisplay = (props) => {
 								baths={card.bathrooms}
 								size={card.size}
 								address={card.address}
+								mode={props.mode}
 								/>
 				</div>
 			)
@@ -21,7 +22,7 @@ const CardDisplay = (props) => {
 		<div className="cardDisplay">
 			<div className="cardHeader">
 				<h2 className="cardHeaderTitle">{props.value} Real Estate</h2>
-				<div className="numHomes">{props.neighborhood.length} homes for sale</div>
+				<div className="numHomes">{props.neighborhood.length} homes for {props.mode == "buy" ? "sale" : "rent"}</div>
 				<div className="headerLinksDiv">
 					<span onClick={!props.ascending ? props.changeSort : null} className={props.ascending ? "headerLinks underline" : "headerLinks"}>Price Ascending</span>
 					<span onClick={props.ascending ? props.changeSort : null} className={!props.ascending ? "headerLinks underline" : "headerLinks"}>Price Descending</span>

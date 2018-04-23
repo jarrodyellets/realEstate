@@ -28,7 +28,8 @@ class PropertyDisplay extends Component{
 											 ascending={this.props.ascending}
 											 changeSort={this.props.changeSort} 
 											 id={this.props.id} 
-											 changeId={this.props.changeId} />
+											 changeId={this.props.changeId}
+											 mode={this.props.mode} />
 				</div>
 			</div>
 			)

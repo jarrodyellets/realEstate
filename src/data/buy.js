@@ -100,6 +100,17 @@ const propertiesBuy = [
 	},
 	{
 		neighborhood: "Travis Heights",
+		price: "$775,000",
+		bedrooms: "4 bds",
+		bathrooms: "3 ba",
+		size: "2,047 sqft",
+		address: "511 E Mary St",
+		lat: 30.243737,
+		lng: -97.746699,
+		image: "https://www.jarrodyellets.com/images/pillow/buy/511emary.jpg"
+	},
+	{
+		neighborhood: "Travis Heights",
 		price: "$528,600",
 		bedrooms: "2 bds",
 		bathrooms: "3 ba",

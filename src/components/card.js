@@ -18,7 +18,7 @@ class Card extends Component {
 		return(
 			<div className="card" style={cardStyle}>
 				<div className="description">
-					<span className="price">{this.props.price} </span>
+					<span className="price">{this.props.price}{this.props.mode == "rent" ? "/month" : ""}</span>
 					<div>
 						<span className="beds">{this.props.beds} </span>
 						<span className="baths">{this.props.baths} </span>

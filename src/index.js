@@ -5,6 +5,7 @@ import Intro from './components/intro';
 import PropertyDisplay from './components/PropertyDisplay';
 import SortNav from './components/sortNav';
 import buy from './data/buy';
+import rent from './data/rent';
 import neighborhoodData from './data/neighborhoodData';
 
 import style from '../public/css/style.css';
@@ -52,6 +53,8 @@ class App extends Component {
 	changeMode(e){
 		this.setState({
 			mode: e
+		}, () => {
+			this.changeNeighborhood();
 		})
 	}
 
@@ -75,7 +78,8 @@ class App extends Component {
 		const neighborhood = this.state.value;
 		const beds = this.state.beds;
 		const price = this.state.price;
-		const filteredNeighborhood = buy.filter(function(house){
+		const list = this.state.mode == "buy" ? buy : rent;
+		const filteredNeighborhood = list.filter(function(house){
 		 return neighborhood != "Austin" ? house.neighborhood == neighborhood : buy
 		})
 		const newfilteredNeighborhood = filteredNeighborhood.filter(function(house){

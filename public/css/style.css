@@ -11,11 +11,13 @@ body {
 .navbar {
 	background: #eee;
 	border: none;
-	border-bottom: 1px solid #c1c1c1;
 	border-radius: 0;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+	z-index: 7;
 }
 
 .navbar-default .navbar-brand {
@@ -33,7 +35,7 @@ body {
 	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
-	z-index: 7;
+	z-index: 8;
 }
 
 .logoTitle {
@@ -49,6 +51,8 @@ body {
 
 .buyLinks {
 	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .hidden {
@@ -149,6 +153,8 @@ body {
 	width: 80%;
 	background: rgba(0, 0, 0, .6);
 	border: 1px solid #eee;
+	-moz-appearance: none;
+	cursor: pointer;
 }
 
 select option {
@@ -249,7 +255,9 @@ select option {
 }
 
 .propertyContainer {
-	height: 100%
+	height: 100%;
+	position: relative;
+	padding-top: 50px;
 }
 
 .propertyGrid {
@@ -260,6 +268,8 @@ select option {
 
 .cardDisplay {
 	position: relative;
+	top: 0;
+	bottom: 50px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 135px;
@@ -271,11 +281,12 @@ select option {
 	-moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
 	z-index: 5;
-	padding: 3px 3px 53px 3px;
+	padding: 3px 3px 3px 3px;
 }
 
 .sortNav {
-	position: relative;
+	position: absolute;
+	top: 50px;
 	width: 100%;
 	min-height: 50px;
 	height: 50px;
@@ -295,6 +306,10 @@ select option {
 	margin: 0 5px;
 	background: rgba(0, 0, 0, 0);
 	border: 1px solid #eee;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+	padding: 0 5px;
 }
 
 .sortButton {
@@ -374,3 +389,4 @@ select option {
 .underline {
 	border-bottom: 3px solid #05386b;
 }
+

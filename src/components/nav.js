@@ -16,10 +16,10 @@ const NavBar = (props) => {
 		  <Navbar.Collapse>
 		    <Nav pullRight>
 		      <NavItem onClick={() => {props.changeMode("buy"); props.intro ? props.changeIntro(): null}} eventKey={1} href="#">
-		        <div className={props.mode == "buy" ? "buyLinks underline" :"buyLinks"}>Buy</div>
+		        <div className={props.mode == "buy" && !props.intro ? "buyLinks underline" :"buyLinks"}>Buy</div>
 		      </NavItem>
 		      <NavItem onClick={() => {props.changeMode("rent"); props.intro ? props.changeIntro(): null}} eventKey={2} href="#">
-		      	<div className={props.mode == "rent" ? "buylinks underline" : "buyLinks"}>Rent</div>
+		      	<div className={props.mode == "rent" && !props.intro ? "buyLinks underline" : "buyLinks"}>Rent</div>
 		      </NavItem>
 		    </Nav>
 		  </Navbar.Collapse>

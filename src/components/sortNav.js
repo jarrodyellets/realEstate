@@ -4,7 +4,7 @@ const SortNav = (props) => {
 	return (
 		<div className="sortNav">
 			<select value={props.value} onChange={props.changeValue} className="sortSelect ">
-				<option value="Austin">All Neighborhoods</option>
+				<option value="Austin">All Neighborhoods &#9660;</option>
 				<option value="Downtown">Downtown</option>
 				<option value="Travis Heights">Travis Heights</option>
 				<option value="East Austin">East Austin</option>
@@ -16,7 +16,7 @@ const SortNav = (props) => {
 				<option value="West Campus">West Campus</option>
 			</select>
 			<select value={props.price} onChange={props.changePrice} className="sortSelect ">
-				<option value="price" disabled>Price Max</option>
+				<option value="price" disabled>Price Max &#9660;</option>
 				<option value="250000">$250,000</option>
 				<option value="350000">$350,000</option>
 				<option value="500000">$500,000</option>
@@ -27,7 +27,7 @@ const SortNav = (props) => {
 				<option value="price">All</option>
 			</select>
 			<select value={props.beds} onChange={props.changeBeds} className="sortSelect ">
-				<option value="beds">All Bedrooms</option>
+				<option value="beds">All Bedrooms &#9660;</option>
 				<option value="1 bd">1</option>
 				<option value="2 bds">2</option>
 				<option value="3 bds">3</option>

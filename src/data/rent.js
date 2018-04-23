@@ -87,6 +87,94 @@ const rent = [
 	lng: -97.741076,
 	image: "https://www.jarrodyellets.com/images/pillow/rent/800brazos.jpg"
 },
+{
+	neighborhood: "East Austin",
+	price: "$1,195",
+	bedrooms: "1 bd",
+	bathrooms: "1 ba",
+	size: "450 sqft",
+	address: "2705 E 16th St",
+	lat: 30.277922,
+	lng: -97.712174,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2705e16th.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$2,550",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,144 sqft",
+	address: "1314 E 13th St",
+	lat: 30.274109,
+	lng: -97.725440,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1314e13th.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$2,000",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "864 sqft",
+	address: "2009 Canterbury St",
+	lat: 30.254391,
+	lng: -97.723520,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2009canterbury.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$1,865",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "915 sqft",
+	address: "1910 E 11th St",
+	lat: 30.266079,
+	lng: -97.719585,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1910e11th.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$1,600",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "872 sqft",
+	address: "1807 Poquito St",
+	lat: 30.279633,
+	lng: -97.719479,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1807poquito.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$1,625",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "650 sqft",
+	address: "3502 E 12th St",
+	lat: 30.277831,
+	lng: -97.695848,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3502e12th.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$3,900",
+	bedrooms: "2 bds",
+	bathrooms: "2.5 ba",
+	size: "1,519 sqft",
+	address: "2016 Jesse E Segovia St",
+	lat: 30.250347,
+	lng: -97.725058,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2016segovia.jpg"
+},
+{
+	neighborhood: "East Austin",
+	price: "$2,200",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,186 sqft",
+	address: "1806 Loreto Dr",
+	lat: 30.282047,
+	lng: -97.701143,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1806loreto.jpg"
+},
 ]
 
 export default rent;

@@ -14,7 +14,7 @@ class App extends Component {
 		super(props);
 		this.state = {
 			intro: true,
-			mode: "buy",
+			mode: "",
 			ascending: true,
 			value: "Austin",
 			neighborhood: buy,
@@ -137,7 +137,7 @@ class App extends Component {
 							 changeMode={this.changeMode} />
 				{!this.state.intro ? <PropertyDisplay id={this.state.id}
 																							changeId={this.changeId}
-																							mode={this.state.intro}
+																							mode={this.state.mode}
 																							zoom={this.state.zoom}
 																							center={this.state.center}
 																							value={this.state.value}

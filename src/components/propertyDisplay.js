@@ -9,6 +9,7 @@ class PropertyDisplay extends Component{
 	}
 
 	render(){
+		console.log(this.props.mode);
 		return(
 			<div className="propertyContainer">
 				<div className="propertyGrid">

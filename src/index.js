@@ -44,6 +44,8 @@ class App extends Component {
 		const intro = this.state.intro
 		this.setState({
 			intro: !intro
+		}, () => {
+			this.changeNeighborhood();
 		})
 	}
 
@@ -82,8 +84,11 @@ class App extends Component {
 		const displayedNeighborhood = newfilteredNeighborhood.filter(function(house){
 			return price != "price" ? Number((house.price).replace(/[^\d.]/g, '')) <= Number((price).replace(/[^\d.]/g, '')) : filteredNeighborhood
 		})
+		const sortedNeighborhood = this.state.ascending ? 
+															 displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) > Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) > Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} ) :
+															 displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) < Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) < Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} )
 		this.setState({
-			neighborhood: displayedNeighborhood,
+			neighborhood: sortedNeighborhood,
 			center: neighborhoodData[this.state.value.replace(/\s/g, '')],
 			zoom: neighborhood == "Austin" ? 13 : 14
 		})
@@ -113,6 +118,8 @@ class App extends Component {
 		const sort = this.state.ascending;
 		this.setState({
 			ascending: !sort
+		}, () => {
+			this.changeNeighborhood();
 		})
 	}
 

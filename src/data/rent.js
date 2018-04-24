@@ -318,6 +318,149 @@ const rent = [
 	lng: -97.801065,
 	image: "https://www.jarrodyellets.com/images/pillow/rent/103bulian.jpg"
 },
+{
+	neighborhood: "Barton Hills",
+	price: "$4,200",
+	bedrooms: "3 bds",
+	bathrooms: "2.5 ba",
+	size: "1,896 sqft",
+	address: "1905 Westridge Dr",
+	lat: 30.255655,
+	lng: -97.779373,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1905westridge.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$1,159",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "790 sqft",
+	address: "1660 Spyglass Dr",
+	lat: 30.257434,
+	lng: -97.788881,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1660spyglass.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$2,200",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,896 sqft",
+	address: "2008 Ann Arbor Ave",
+	lat: 30.252149,
+	lng: -97.776690,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2008annarbor.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$2,150",
+	bedrooms: "2 bds",
+	bathrooms: "1.5 ba",
+	size: "1,200 sqft",
+	address: "1121 Bluebonnet Ln",
+	lat: 30.257132,
+	lng: -97.770674,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1121bluebonnet.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$3,300",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,740 sqft",
+	address: "2503 Dip Cv",
+	lat: 30.251659,
+	lng: -97.794334,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2503dip.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$4,000",
+	bedrooms: "3 bds",
+	bathrooms: "3 ba",
+	size: "1,910 sqft",
+	address: "1401 Spyglass Dr",
+	lat: 30.259742,
+	lng: -97.786094,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1401spyglass.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$2,000",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "850 sqft",
+	address: "1707 Margaret St",
+	lat: 30.256761,
+	lng: -97.767218,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1707margaret.jpg"
+},
+{
+	neighborhood: "Barton Hills",
+	price: "$2,700",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "909 sqft",
+	address: "1904 Anita Dr",
+	lat: 30.254648,
+	lng: -97.771192,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1904anita.jpg"
+},
+{
+	neighborhood: "Westlake",
+	price: "$3,200",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,623 sqft",
+	address: "2226 Westlake Dr",
+	lat: 30.303179,
+	lng: -97.784756,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2226westlake.jpg"
+},
+{
+	neighborhood: "Westlake",
+	price: "$1,750",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,432 sqft",
+	address: "903 The High Rd",
+	lat: 30.309785,
+	lng: -97.798794,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/903high.jpg"
+},
+{
+	neighborhood: "Westlake",
+	price: "$6,900",
+	bedrooms: "5 bds",
+	bathrooms: "4.5 ba",
+	size: "4,900 sqft",
+	address: "695 Windsong Trl",
+	lat: 30.301572,
+	lng: -97.802510,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/695windsong.jpg"
+},
+{
+	neighborhood: "Westlake",
+	price: "$1,100",
+	bedrooms: "1 bd",
+	bathrooms: "1 ba",
+	size: "725 sqft",
+	address: "1801 Westlake Dr",
+	lat: 30.302405,
+	lng: -97.794745,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1801westlake.jpg"
+},
+{
+	neighborhood: "Westlake",
+	price: "$2,255",
+	bedrooms: "2 bds",
+	bathrooms: "1.5 ba",
+	size: "1,350 sqft",
+	address: "1951 Westlake Dr",
+	lat: 30.300283,
+	lng: -97.789786,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1951westlake.jpg"
+},
 ]
 
 export default rent;

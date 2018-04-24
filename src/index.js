@@ -139,7 +139,8 @@ class App extends Component {
 																		 changeValue={this.changeValue}
 																		 beds={this.state.beds} price={this.state.price}
 																		 changeBeds={this.changeBeds}
-																		 changePrice={this.changePrice} />: null}
+																		 changePrice={this.changePrice}
+																		 mode={this.state.mode} />: null}
 				<Intro buy={buy}
 							 intro={this.state.intro}
 							 changeIntro={this.changeIntro}

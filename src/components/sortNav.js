@@ -17,13 +17,13 @@ const SortNav = (props) => {
 			</select>
 			<select value={props.price} onChange={props.changePrice} className="sortSelect ">
 				<option value="price" disabled>Price Max &#9660;</option>
-				<option value="250000">$250,000</option>
-				<option value="350000">$350,000</option>
-				<option value="500000">$500,000</option>
-				<option value="600000">$600,000</option>
-				<option value="750000">$750,000</option>
-				<option value="850000">$850,000</option>
-				<option value="1000000">$1,000,000</option>
+				<option value={props.mode == "buy" ? "250000" : "1500"}>{props.mode == "buy" ? "$250,000" : "$1,500/mo"}</option>
+				<option value={props.mode == "buy" ? "350000" : "2000"}>{props.mode == "buy" ? "$350,000" : "$2,000/mo"}</option>
+				<option value={props.mode == "buy" ? "500000" : "2500"}>{props.mode == "buy" ? "$500,000" : "$2,500/mo"}</option>
+				<option value={props.mode == "buy" ? "600000" : "3000"}>{props.mode == "buy" ? "$600,000" : "$3,000/mo"}</option>
+				<option value={props.mode == "buy" ? "750000" : "3500"}>{props.mode == "buy" ? "$750,000" : "$3,500/mo"}</option>
+				<option value={props.mode == "buy" ? "850000" : "4000"}>{props.mode == "buy" ? "$850,000" : "$4,000/mo"}</option>
+				<option value={props.mode == "buy" ? "1000000" : "5000"}>{props.mode == "buy" ? "$1,000,000" : "$5,000/mo"}</option>
 				<option value="price">All</option>
 			</select>
 			<select value={props.beds} onChange={props.changeBeds} className="sortSelect ">

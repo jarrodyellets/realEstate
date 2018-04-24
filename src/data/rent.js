@@ -263,6 +263,61 @@ const rent = [
 	lng: -97.701143,
 	image: "https://www.jarrodyellets.com/images/pillow/rent/1806loreto.jpg"
 },
+{
+	neighborhood: "Rollingwood",
+	price: "$3,850",
+	bedrooms: "3 bds",
+	bathrooms: "3 ba",
+	size: "2,528 sqft",
+	address: "2 Randolph Pl",
+	lat: 30.274830,
+	lng: -97.789994,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2randolph.jpg"
+},
+{
+	neighborhood: "Rollingwood",
+	price: "$3,495",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,782 sqft",
+	address: "5008 Jeffery Pl",
+	lat: 30.276028,
+	lng: -97.793485,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/5008jeffery.jpg"
+},
+{
+	neighborhood: "Rollingwood",
+	price: "$3,950",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,911 sqft",
+	address: "5004 Timberline Dr",
+	lat: 30.272470,
+	lng: -97.793825,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/5004timberline.jpg"
+},
+{
+	neighborhood: "Rollingwood",
+	price: "$9,900",
+	bedrooms: "5 bds",
+	bathrooms: "4.5 ba",
+	size: "6,039 sqft",
+	address: "502 Coquina Ln",
+	lat: 30.285027,
+	lng: -97.797265,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/502conquina.jpg"
+},
+{
+	neighborhood: "Rollingwood",
+	price: "$1,650",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,100 sqft",
+	address: "103 Bulian Ln",
+	lat: 30.275597,
+	lng: -97.801065,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/103bulian.jpg"
+},
 ]
 
 export default rent;

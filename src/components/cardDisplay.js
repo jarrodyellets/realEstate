@@ -5,7 +5,7 @@ const CardDisplay = (props) => {
 	const neighborhood = props.neighborhood
 	const cards = neighborhood.map((card, i) => {
 		return (
-				<div key={i} className={i} onMouseOver={props.changeId.bind(props.changeId, i)} onMouseLeave={props.changeId.bind(props.changeId, null)} >
+				<div key={card.image} className={i} onMouseOver={props.changeId.bind(props.changeId, i)} onMouseLeave={props.changeId.bind(props.changeId, null)} >
 					<Card img={card.image}
 								price={card.price}
 								beds={card.bedrooms}

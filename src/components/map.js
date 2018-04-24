@@ -5,7 +5,7 @@ import Marker from './marker';
 const Maps = (props) => {
 	const houses = props.neighborhood.map((house, i) => {
 		return(
-       <Marker key={i}
+       <Marker key={house.image}
        				 id={i}
        				 lat={house.lat}
        				 lng={house.lng}

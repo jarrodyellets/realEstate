@@ -195,12 +195,24 @@ select option {
 	color: #444;
 }
 
+.featuredCardDiv {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	max-height: 300px;
+	min-height: 200px;
+	grid-gap: 40px;
+
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	color: #fff;
-	font-size: 1vw;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	padding: 5px;
@@ -212,7 +224,7 @@ select option {
 }
 
 .price {
-	font-size: 1.7vw;
+	font-size: 30px;
 }
 
 .houseIconDiv {

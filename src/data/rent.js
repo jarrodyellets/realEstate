@@ -461,6 +461,96 @@ const rent = [
 	lng: -97.789786,
 	image: "https://www.jarrodyellets.com/images/pillow/rent/1951westlake.jpg"
 },
+{
+	neighborhood: "Tarrytown",
+	price: "$3,500",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,859 sqft",
+	address: "2710 Bowman Ave",
+	lat: 30.298656,
+	lng: -97.768390,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2710bowman.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$5,900",
+	bedrooms: "4 bds",
+	bathrooms: "2.5 ba",
+	size: "2,758 sqft",
+	address: "2200 Bonita St",
+	lat: 30.300389,
+	lng: -97.760324,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2200bonita.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$1,550",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "900 sqft",
+	address: "3506 Enfield Rd",
+	lat: 30.294850,
+	lng: -97.780448,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3506enfield.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$6,800",
+	bedrooms: "5 bds",
+	bathrooms: "4.5 ba",
+	size: "3,521 sqft",
+	address: "3509 River Rd",
+	lat: 30.306411,
+	lng: -97.773888,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3509river.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$2,695",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,900 sqft",
+	address: "3006 Maywood Cir",
+	lat: 30.310417,
+	lng: -97.766756,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3006maywood.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$1,875",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "1,712 sqft",
+	address: "3511 Windsor Rd",
+	lat: 30.300014,
+	lng: -97.774928,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3511windsor.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$2,800",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,470 sqft",
+	address: "3707 Windsor Rd",
+	lat: 30.301801,
+	lng: -97.778750,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/3707windsor.jpg"
+},
+{
+	neighborhood: "Tarrytown",
+	price: "$1,675",
+	bedrooms: "1 bd",
+	bathrooms: "1.5 ba",
+	size: "1,050 sqft",
+	address: "1603 Courtland Ln",
+	lat: 30.292822,
+	lng: -97.773145,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1603courtland.jpg"
+},
+
+
 ]
 
 export default rent;

@@ -549,8 +549,182 @@ const rent = [
 	lng: -97.773145,
 	image: "https://www.jarrodyellets.com/images/pillow/rent/1603courtland.jpg"
 },
-
-
+{
+	neighborhood: "Hyde Park",
+	price: "$2,995",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,695 sqft",
+	address: "4206 Avenue G",
+	lat: 30.304989,
+	lng: -97.728590,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4206aveg.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$1,100",
+	bedrooms: "1 bd",
+	bathrooms: "1 ba",
+	size: "560 sqft",
+	address: "4007 Avenue C",
+	lat: 30.304325,
+	lng: -97.733204,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4007avec.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$2,400",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "1,200 sqft",
+	address: "500 E 48th St",
+	lat: 30.310872,
+	lng: -97.721664,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/500e48th.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$2,500",
+	bedrooms: "3 bds",
+	bathrooms: "2 ba",
+	size: "2,334 sqft",
+	address: "4604 Duval St",
+	lat: 30.309245,
+	lng: -97.723446,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4604duval.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$1,650",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "1,544 sqft",
+	address: "4500 Avenue G",
+	lat: 30.308022,
+	lng: -97.726712,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4500aveg.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$3,950",
+	bedrooms: "6 bds",
+	bathrooms: "3 ba",
+	size: "2,400 sqft",
+	address: "4405 Barrow Ave",
+	lat: 30.305717,
+	lng: -97.724040,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4405barrow.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$1,850",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "863 sqft",
+	address: "4906 Rowena Ave",
+	lat: 30.314172,
+	lng: -97.724167,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4906rowena.jpg"
+},
+{
+	neighborhood: "Hyde Park",
+	price: "$3,395",
+	bedrooms: "4 bds",
+	bathrooms: "3 ba",
+	size: "1,864 sqft",
+	address: "4517 Speedway",
+	lat: 30.309646,
+	lng: -97.727264,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/4517speedway.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$5,600",
+	bedrooms: "4 bds",
+	bathrooms: "2.5 ba",
+	size: "2,455 sqft",
+	address: "2312 Longview St",
+	lat: 30.287716,
+	lng: -97.750763,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2312longview.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,600",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "688 sqft",
+	address: "807 W 25th St",
+	lat: 30.289164,
+	lng: -97.746126,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/807w25th.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,450",
+	bedrooms: "2 bds",
+	bathrooms: "1 ba",
+	size: "513 sqft",
+	address: "2210 Pearl St",
+	lat: 30.286463,
+	lng: -97.746742,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2210pearl.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,725",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "989 sqft",
+	address: "2606 Rio Grande St",
+	lat: 30.289372,
+	lng: -97.749034,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2606riogrande.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,500",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "710 sqft",
+	address: "1011 W 23rd St",
+	lat: 30.286993,
+	lng: -97.748938,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/1011w23rd.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,064",
+	bedrooms: "1 bds",
+	bathrooms: "1 ba",
+	size: "465 sqft",
+	address: "910 W 25th St",
+	lat: 30.289655,
+	lng: -97.747310,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/910w25th.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$3,200",
+	bedrooms: "4 bds",
+	bathrooms: "2 ba",
+	size: "4,750 sqft",
+	address: "2301 Rio Grande St",
+	lat: 30.286834,
+	lng: -97.744461,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/2301riogrande.jpg"
+},
+{
+	neighborhood: "West Campus",
+	price: "$1,600",
+	bedrooms: "2 bds",
+	bathrooms: "2 ba",
+	size: "808 sqft",
+	address: "704 W 21st St",
+	lat: 30.284432,
+	lng: -97.745872,
+	image: "https://www.jarrodyellets.com/images/pillow/rent/704w21st.jpg"
+},
 ]
 
 export default rent;

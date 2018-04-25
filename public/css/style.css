@@ -410,15 +410,14 @@ select option {
 	width: 100vw;
 	background: rgba(0, 0, 0, .5);
 	z-index: 19;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .detailContainer {
-	position: absolute;
-	top: 20%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0 auto;
+	position: relative;
 	width: 550px;
 	height: 550px;
 	background: #eee;

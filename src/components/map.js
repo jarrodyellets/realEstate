@@ -14,7 +14,9 @@ const Maps = (props) => {
        				 neighborhood={props.neighborhood}
        				 changeId={props.changeId}
        				 hoverId={props.hoverId}
-       				 changeHoverId={props.changeHoverId} />
+       				 changeHoverId={props.changeHoverId}
+               changeDetail={props.changeDetail}
+               changeHouse={props.changeHouse} />
 			)
 	});
 

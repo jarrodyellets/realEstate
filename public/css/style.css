@@ -402,3 +402,28 @@ select option {
 	border-bottom: 3px solid #05386b;
 }
 
+.detailContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 550px;
+	height: 550px;
+	background: #eee;
+	z-index: 20;
+}
+
+.detailNav {
+	width: 100%;
+	height: 50px;
+	background: rgba(5, 56, 107, .8);
+	padding-right: 10px;
+}
+
+.closeDetail {
+	font-size: 36px;
+	color: #eee;
+	text-align: right;
+	cursor: pointer;
+}

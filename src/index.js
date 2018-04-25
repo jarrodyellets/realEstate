@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import CardDetail from './components/cardDetail';
 import NavBar from './components/nav';
 import Intro from './components/intro';
 import PropertyDisplay from './components/PropertyDisplay';
@@ -23,6 +24,8 @@ class App extends Component {
 			price: "price",
 			id: null,
 			hoverId: null,
+			house: null,
+			detail: false,
 			zoom: 13,
 			center: {
 				lat: 30.274726,
@@ -38,6 +41,8 @@ class App extends Component {
 		this.changeId = this.changeId.bind(this);
 		this.changeHoverId = this.changeHoverId.bind(this);
 		this.changeSort = this.changeSort.bind(this);
+		this.changeDetail = this.changeDetail.bind(this);
+		this.changeHouse = this.changeHouse.bind(this);
 
 	}
 
@@ -128,9 +133,24 @@ class App extends Component {
 		})
 	}
 
+	changeDetail(){
+		const detail = this.state.detail
+		this.setState({
+			detail: !detail
+		})
+	}
+
+	changeHouse(e){
+		const neighborhood = this.state.neighborhood;
+		this.setState({
+			house: neighborhood[e]
+		})
+	}
+
 	render() {
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
+				{this.state.detail ? <CardDetail house={this.state.house} detail={this.state.detail} changeDetail={this.changeDetail} /> : null}
 				<NavBar changeIntro={this.changeIntro}
 								intro={this.state.intro}
 								mode={this.state.mode}
@@ -159,7 +179,11 @@ class App extends Component {
 																							ascending={this.state.ascending}
 																							changeSort={this.changeSort}
 																							hoverId={this.state.hoverId}
-																							changeHoverId={this.changeHoverId} /> : null}
+																							changeHoverId={this.changeHoverId}
+																							house={this.state.house}
+																							detail={this.state.detail}
+																							changeDetail={this.changeDetail}
+																							changeHouse={this.changeHouse} /> : null}
 			</div>
 			)
 	}

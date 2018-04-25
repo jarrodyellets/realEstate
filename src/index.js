@@ -16,7 +16,7 @@ class App extends Component {
 		super(props);
 		this.state = {
 			intro: true,
-			mode: "",
+			mode: "buy",
 			ascending: true,
 			value: "Austin",
 			neighborhood: buy,
@@ -150,7 +150,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className={this.state.intro ? "" : "wrapper"}>
-				{this.state.detail ? <CardDetail house={this.state.house} detail={this.state.detail} changeDetail={this.changeDetail} /> : null}
+				{this.state.detail ? <CardDetail house={this.state.house} detail={this.state.detail} changeDetail={this.changeDetail} mode={this.state.mode} /> : null}
 				<NavBar changeIntro={this.changeIntro}
 								intro={this.state.intro}
 								mode={this.state.mode}

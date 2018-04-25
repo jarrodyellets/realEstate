@@ -402,6 +402,16 @@ select option {
 	border-bottom: 3px solid #05386b;
 }
 
+.blackout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, .5);
+	z-index: 19;
+}
+
 .detailContainer {
 	position: absolute;
 	top: 20%;

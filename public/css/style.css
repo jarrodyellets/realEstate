@@ -179,7 +179,7 @@ select option {
 }
 
 .featured {
-	width: 70%;
+	width: 100%;
 	margin: 0 auto 50px auto;
 }
 
@@ -197,14 +197,15 @@ select option {
 
 .featuredCardDiv {
 	width: 100%;
-	max-width: 900px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	max-height: 300px;
-	min-height: 200px;
-	grid-gap: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
 
+}
+.leftHouse {
+	padding-right: 30px;
 }
 
 .card {
@@ -460,6 +461,13 @@ select option {
 
 .detailHouse {
 	padding: 0 5px;
+}
+
+.detailHouseFeatured {
+	padding: 0 5px;
+	background: rgba(5, 56, 107, .8);
+	color: #fff;
+	text-shadow:0px 0px 6px #000000, 0px 0px 4px #000000, 0px 0px 2px #000000;
 }
 
 .detailPrice {

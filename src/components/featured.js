@@ -2,8 +2,8 @@ import React from 'react';
 import Card from './card';
 
 const Featured = (props) => {
-	const randomProp = props.buy[7];
-	const randomRent = props.buy[29];
+	const house1 = props.mode == "buy" ? props.buy[43] : props.rent[22];
+	const house2 = props.mode == "buy" ? props.buy[55] : props.rent[5];
 
 	return (
 		<div className="featured">
@@ -12,20 +12,30 @@ const Featured = (props) => {
 				<div>Click to see more info</div>
 			</div>
 			<div className="featuredCardDiv">
-				<Card img={randomProp.image}
-							price={randomProp.price}
-							beds={randomProp.bedrooms}
-							baths={randomProp.bathrooms}
-							size={randomProp.size}
-							address={randomProp.address}
-							/>
-				<Card img={randomRent.image}
-							price={randomRent.price}
-							beds={randomRent.bedrooms}
-							baths={randomRent.bathrooms}
-							size={randomRent.size}
-							address={randomRent.address}
-							/>
+			 	<div className="leftHouse">
+					<img className="detailImage" src={house1.image} />
+					<div className="detailHouseFeatured">
+						<div className="detailPrice">{house1.price}{props.mode == "rent" ? "/mo" : ""}</div>
+						<div className="detailDetails">
+							<span className="detailBeds">{house1.bedrooms} </span>
+							<span className="detailBaths">{house1.bathrooms} </span>
+							<span className="detailSize">{house1.size}</span>
+						</div> 
+						<div className="detailAddress">{house1.address} Austin, TX</div>
+					</div>
+				</div>
+				<div>
+					<img className="detailImage" src={house2.image} />
+					<div className="detailHouseFeatured">
+						<div className="detailPrice">{house2.price}{props.mode == "rent" ? "/mo" : ""}</div>
+						<div className="detailDetails">
+							<span className="detailBeds">{house2.bedrooms} </span>
+							<span className="detailBaths">{house2.bathrooms} </span>
+							<span className="detailSize">{house2.size}</span>
+						</div> 
+						<div className="detailAddress">{house2.address} Austin, TX</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		)

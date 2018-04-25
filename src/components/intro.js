@@ -40,7 +40,7 @@ class Intro extends Component {
 						<Neighborhood value={this.props.value} changeValue={this.props.changeValue} changeIntro={this.props.changeIntro} />
 					</div>
 				</div>
-				<Featured buy={this.props.buy} />
+				<Featured buy={this.props.buy} rent={this.props.rent} mode={this.props.mode} />
 			</div>
 			)
 	}

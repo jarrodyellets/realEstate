@@ -162,6 +162,7 @@ class App extends Component {
 																		 changePrice={this.changePrice}
 																		 mode={this.state.mode} />: null}
 				<Intro buy={buy}
+							 rent={rent}
 							 intro={this.state.intro}
 							 changeIntro={this.changeIntro}
 							 value={this.state.value}

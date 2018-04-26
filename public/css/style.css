@@ -160,6 +160,9 @@ body {
 	border: 1px solid #eee;
 	-moz-appearance: none;
 	cursor: pointer;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding-left: 5px;
 }
 
 select option {

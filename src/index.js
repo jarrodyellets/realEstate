@@ -52,7 +52,6 @@ class App extends Component {
 			intro: !intro,
 		}, () => {
 			this.changeNeighborhood();
-			this.state.intro ? this.changeMode("") : null;
 		})
 	}
 

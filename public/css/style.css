@@ -511,6 +511,29 @@ select option {
 	.selectButton {
 		width: 50%;
 	}
+
+	.map {
+		display: none;
+	}
+
+	.cardDisplay {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cardHeader {
+		grid-column: span 1;
+	}
+
+	.sortNav {
+		padding-left: 0;
+	}
+
+	.detailContainer {
+		width: 100%;
+		max-width: 550px;
+		height: 100vw;
+		overflow: scroll;
+	}
 }
 
 @media screen and (max-width: 550px){
@@ -524,5 +547,9 @@ select option {
 
 	.introTitle {
 		font-size: 20px;
+	}
+
+	.sortNav {
+		font-size: 10px;
 	}
 }

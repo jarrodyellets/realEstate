@@ -1,6 +1,7 @@
 import React from 'react';
 
 const CardDetail = (props) => {
+	const cardStyle = {backgroundImage: 'url(' + props.house.image + ')'}
 	return(
 		<div className="blackout">
 			<div className="detailContainer">
@@ -8,7 +9,7 @@ const CardDetail = (props) => {
 					<img className="detailLogo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 				  <i onClick={props.changeDetail} className="fas fa-times closeIcon"></i>
 				</div>
-				<img className="detailImage" src={props.house.image} />
+				<div className="detailImage" style={cardStyle}></div>
 				<div className="detailHouse">
 					<div className="detailPrice">{props.house.price}{props.mode == "rent" ? "/mo" : "" }</div>
 					<div className="detailDetails">

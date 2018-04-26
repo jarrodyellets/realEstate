@@ -12,7 +12,7 @@ const Featured = (props) => {
 				<div>Click to see more info</div>
 			</div>
 			<div className="featuredCardDiv">
-			 	<div className="leftHouse">
+			 	<div className="leftHouse featuredHouse">
 					<img className="detailImage" src={house1.image} />
 					<div className="detailHouseFeatured">
 						<div className="detailPrice">{house1.price}{props.mode == "rent" ? "/mo" : ""}</div>
@@ -24,7 +24,7 @@ const Featured = (props) => {
 						<div className="detailAddress">{house1.address} Austin, TX</div>
 					</div>
 				</div>
-				<div>
+				<div className="rightHouse featuredHouse">
 					<img className="detailImage" src={house2.image} />
 					<div className="detailHouseFeatured">
 						<div className="detailPrice">{house2.price}{props.mode == "rent" ? "/mo" : ""}</div>

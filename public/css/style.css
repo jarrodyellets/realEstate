@@ -29,6 +29,11 @@ body {
 	font-size: 18px;
 }
 
+.navbar .navbar-collapse {
+	text-align: center;
+	overflow-x: hidden;
+}
+
 .logo {
 	position: absolute;
 	top: 0;
@@ -202,8 +207,8 @@ select option {
 	justify-content: center;
 	align-items: center;
 	min-height: 300px;
-
 }
+
 .leftHouse {
 	padding-right: 30px;
 }
@@ -468,8 +473,56 @@ select option {
 	background: rgba(5, 56, 107, .8);
 	color: #fff;
 	text-shadow:0px 0px 6px #000000, 0px 0px 4px #000000, 0px 0px 2px #000000;
+	width:  100%;
 }
 
 .detailPrice {
 	font-size: 30px;
+}
+
+@media screen and (max-width: 1200px){
+	.featuredCardDiv {
+		flex-direction: column;
+	}
+	.leftHouse {
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.logo {
+		height: 50px;
+		width: 50px;
+	}
+
+	.logoTitle {
+		display: none;
+	}
+
+	.introTitle {
+		font-size: 30px;
+	}
+
+	.introSelect {
+		width: 50%;
+	}
+
+	.selectButton {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.featuredHouse {
+		width: 100%;
+	}
+
+	.detailImage {
+		width: 100%;
+	}
+
+	.introTitle {
+		font-size: 20px;
+	}
 }

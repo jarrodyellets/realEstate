@@ -162,7 +162,8 @@ body {
 	cursor: pointer;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	padding-left: 5px;
+	-webkit-border-radius: 0px;
+	padding-left: 5px	;
 }
 
 select option {
@@ -481,6 +482,13 @@ select option {
 
 .detailPrice {
 	font-size: 30px;
+}
+
+.foot {
+  color: #eee;
+  background-color: rgba(5, 56, 107, .8);
+  height: 100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px){

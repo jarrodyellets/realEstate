@@ -188,6 +188,9 @@ class App extends Component {
 																							detail={this.state.detail}
 																							changeDetail={this.changeDetail}
 																							changeHouse={this.changeHouse} /> : null}
+			{this.state.intro ? <div class="foot">
+    												<p>Pillow | 2018</p>
+  												 </div> : null}
 			</div>
 			)
 	}

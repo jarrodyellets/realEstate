@@ -9,7 +9,6 @@ const Featured = (props) => {
 		<div className="featured">
 			<div className="featuredTitleDiv">
 				<h2 className="featuredTitle">Featured Properties</h2>
-				<div>Click to see more info</div>
 			</div>
 			<div className="featuredCardDiv">
 			 	<div className="leftHouse featuredHouse">

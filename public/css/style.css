@@ -534,6 +534,11 @@ select option {
 		height: 100vw;
 		overflow: scroll;
 	}
+
+	.wrapper {
+		height: 100%;
+		overflow-y: scroll;
+	}
 }
 
 @media screen and (max-width: 550px){

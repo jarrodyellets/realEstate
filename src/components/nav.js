@@ -7,7 +7,9 @@ const NavBar = (props) => {
 		  <Navbar.Header>
 		    <Navbar.Brand>
 		      <a href="#brand">
-		      	<img onClick={!props.intro ? props.changeIntro : null} className="logo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
+		      	<img onClick={!props.intro ? props.changeIntro : null} 
+		      			 className="logo" 
+		      			 src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 		      </a>
 		      <div className="logoTitle">Austin's Real Estate Portal</div>
 		    </Navbar.Brand>

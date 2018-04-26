@@ -148,11 +148,14 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className={this.state.intro ? "" : "wrapper"} style={this.state.detail ? {height: '100%',
+			<div className={this.state.intro ? "" : "wrapper"} style={this.state.detail && !this.state.intro ? {height: '100%',
 																																										 overflow: 'hidden',
 																																										 width: '100%',
 																																										 position: 'fixed'} : null}>
-				{this.state.detail ? <CardDetail house={this.state.house} detail={this.state.detail} changeDetail={this.changeDetail} mode={this.state.mode} /> : null}
+				{this.state.detail ? <CardDetail house={this.state.house} 
+																				 detail={this.state.detail} 
+																				 changeDetail={this.changeDetail} 
+																				 mode={this.state.mode} /> : null}
 				<NavBar changeIntro={this.changeIntro}
 								intro={this.state.intro}
 								mode={this.state.mode}
@@ -170,7 +173,10 @@ class App extends Component {
 							 value={this.state.value}
 							 changeValue={this.changeValue}
 							 mode={this.state.mode}
-							 changeMode={this.changeMode} />
+							 changeMode={this.changeMode}
+							 detail={this.state.detail}
+							 changeDetail={this.changeDetail} 
+							 changeHouse={this.changeHouse} />
 				{!this.state.intro ? <PropertyDisplay id={this.state.id}
 																							changeId={this.changeId}
 																							mode={this.state.mode}
@@ -187,7 +193,7 @@ class App extends Component {
 																							detail={this.state.detail}
 																							changeDetail={this.changeDetail}
 																							changeHouse={this.changeHouse} /> : null}
-			{this.state.intro ? <div class="foot">
+			{this.state.intro ? <div className="foot">
     												<p>Pillow | 2018</p>
   												 </div> : null}
 			</div>

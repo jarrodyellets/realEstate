@@ -2,46 +2,38 @@ import React, {Component} from 'react';
 import Maps from './map';
 import CardDisplay from './cardDisplay';
 
-class PropertyDisplay extends Component{
-	constructor(props){
-		super(props);
-
-	}
-
-	render(){
-		console.log(this.props.mode);
+const PropertyDisplay = (props) => {
 		return(
 			<div className="propertyContainer">
 				<div className="propertyGrid">
-					<Maps zoom={this.props.zoom} 
-								center={this.props.center} 
-								buy={this.props.buy} 
-								neighborhood={this.props.neighborhood} 
-								value={this.props.value} 
-								id={this.props.id}
-								changeId={this.props.changeId}
-								hoverId={this.props.hoverId}
-								changeHoverId={this.props.changeHoverId}
-								house={this.props.house}
-								detail={this.props.detail}
-								changeDetail={this.props.changeDetail}
-								changeHouse={this.props.changeHouse} />
-					<CardDisplay neighborhood={this.props.neighborhood} 
-											 buy={this.props.buy} 
-											 value={this.props.value}
-											 ascending={this.props.ascending}
-											 changeSort={this.props.changeSort} 
-											 id={this.props.id} 
-											 changeId={this.props.changeId}
-											 mode={this.props.mode}
-											 house={this.props.house}
-											 detail={this.props.detail}
-											 changeDetail={this.props.changeDetail}
-											 changeHouse={this.props.changeHouse} />
+					<Maps zoom={props.zoom} 
+								center={props.center} 
+								buy={props.buy} 
+								neighborhood={props.neighborhood} 
+								value={props.value} 
+								id={props.id}
+								changeId={props.changeId}
+								hoverId={props.hoverId}
+								changeHoverId={props.changeHoverId}
+								house={props.house}
+								detail={props.detail}
+								changeDetail={props.changeDetail}
+								changeHouse={props.changeHouse} />
+					<CardDisplay neighborhood={props.neighborhood} 
+											 buy={props.buy} 
+											 value={props.value}
+											 ascending={props.ascending}
+											 changeSort={props.changeSort} 
+											 id={props.id} 
+											 changeId={props.changeId}
+											 mode={props.mode}
+											 house={props.house}
+											 detail={props.detail}
+											 changeDetail={props.changeDetail}
+											 changeHouse={props.changeHouse} />
 				</div>
 			</div>
 			)
-	}
 }
 
 export default PropertyDisplay;

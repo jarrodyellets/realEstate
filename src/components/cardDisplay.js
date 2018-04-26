@@ -5,7 +5,11 @@ const CardDisplay = (props) => {
 	const neighborhood = props.neighborhood
 	const cards = neighborhood.map((card, i) => {
 		return (
-				<div onClick={() => {props.changeDetail(); props.changeHouse(i)}} key={card.image} className={i} onMouseOver={props.changeId.bind(props.changeId, i)} onMouseLeave={props.changeId.bind(props.changeId, null)} >
+				<div onClick={() => {props.changeDetail(); props.changeHouse(i)}} 
+						 key={card.image} 
+						 className={i} 
+						 onMouseOver={props.changeId.bind(props.changeId, i)} 
+						 onMouseLeave={props.changeId.bind(props.changeId, null)}>
 					<Card img={card.image}
 								price={card.price}
 								beds={card.bedrooms}
@@ -24,8 +28,10 @@ const CardDisplay = (props) => {
 				<h2 className="cardHeaderTitle">{props.value} Real Estate</h2>
 				<div className="numHomes">{props.neighborhood.length} homes for {props.mode == "buy" ? "sale" : "rent"}</div>
 				<div className="headerLinksDiv">
-					<span onClick={!props.ascending ? props.changeSort : null} className={props.ascending ? "headerLinks underline" : "headerLinks"}>Price Ascending</span>
-					<span onClick={props.ascending ? props.changeSort : null} className={!props.ascending ? "headerLinks underline" : "headerLinks"}>Price Descending</span>
+					<span onClick={!props.ascending ? props.changeSort : null} 
+								className={props.ascending ? "headerLinks underline" : "headerLinks"}>Price Ascending</span>
+					<span onClick={props.ascending ? props.changeSort : null} 
+								className={!props.ascending ? "headerLinks underline" : "headerLinks"}>Price Descending</span>
 				</div>
 			</div>
 			{cards}

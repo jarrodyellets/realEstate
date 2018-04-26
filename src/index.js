@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import CardDetail from './components/cardDetail';
 import NavBar from './components/nav';
 import Intro from './components/intro';
-import PropertyDisplay from './components/PropertyDisplay';
+import PropertyDisplay from './components/propertyDisplay';
 import SortNav from './components/sortNav';
 import buy from './data/buy';
 import rent from './data/rent';

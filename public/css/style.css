@@ -534,6 +534,7 @@ select option {
 		height: 100%;
 		max-width: 550px;
 		overflow: scroll;
+		-webkit-transform: translate3d(0,0,0);
 	}
 
 	.detailLogo {

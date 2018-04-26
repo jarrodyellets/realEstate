@@ -149,7 +149,10 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className={this.state.intro ? "" : "wrapper"}>
+			<div className={this.state.intro ? "" : "wrapper"} style={this.state.detail ? {height: '100%',
+																																										 overflow: 'hidden',
+																																										 width: '100%',
+																																										 position: 'fixed'} : null}>
 				{this.state.detail ? <CardDetail house={this.state.house} detail={this.state.detail} changeDetail={this.changeDetail} mode={this.state.mode} /> : null}
 				<NavBar changeIntro={this.changeIntro}
 								intro={this.state.intro}

@@ -498,10 +498,6 @@ select option {
   text-align: center;
 }
 
-p {
-	margin: 0;
-}
-
 @media screen and (max-width: 1200px){
 	.featuredCardDiv {
 		flex-direction: column;

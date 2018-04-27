@@ -498,6 +498,7 @@ select option {
   text-align: center;
 }
 
+
 @media screen and (max-width: 1200px){
 	.featuredCardDiv {
 		flex-direction: column;
@@ -505,6 +506,31 @@ select option {
 	.leftHouse {
 		padding-right: 0;
 		padding-bottom: 30px;
+	}
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+		.detailContainer {
+			top: 0;
+			overflow: scroll;
+			height: 100%;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 411px) 
+  and (max-device-width: 823px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+		.detailContainer {
+			top: 0;
+			overflow: scroll;
+			height: 100%;
 	}
 }
 
@@ -538,20 +564,6 @@ select option {
 		padding-left: 0;
 	}
 
-	.detailContainer {
-		top: 0;
-		width: 100%;
-		height: 100%;
-		max-width: 550px;
-		max-height: 550px;
-		overflow: scroll;
-		-webkit-transform: translate3d(0,0,0);
-	}
-
-	.blackout {
-		background: rgba(0, 0, 0, ,8);
-	}
-
 	.detailLogo {
 		width: 50px;
 		height: 50px;
@@ -560,6 +572,14 @@ select option {
 	.wrapper {
 		height: 100%;
 		overflow-y: scroll;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.detailContainer {
+		top: 0;
+		overflow: scroll;
+		height: 100%;
 	}
 }
 
@@ -590,11 +610,23 @@ select option {
 
 	.detailContainer {
 		top: 0;
+		width: 100%;
 		height: 100%;
+		max-width: 550px;
+		overflow: scroll;
+		-webkit-transform: translate3d(0,0,0);
 	}
 
 	.detailImage {
 		height: 75%;
+	}
+
+	.detailPrice {
+		font-size: 6vh;
+	}
+
+	.detailHouse {
+		font-size: 3vh;
 	}
 
 	.cardHeaderTitle {

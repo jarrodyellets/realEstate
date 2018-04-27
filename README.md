@@ -1,6 +1,6 @@
 # Pillow Real Estate
 
-<figure><img src="http://www.jarrodyellets.com/images/pillow.png" alt="Moog Drum Machine" style="width: 80%; display: block; margin-left: auto; margin-right: auto;"/></figure>
+<figure><img src="http://www.jarrodyellets.com/images/pillow.png" alt="Pillow Real Estate" style="width: 80%; display: block; margin-left: auto; margin-right: auto;"/></figure>
 
 ## View
 - [Click to View App](https://shielded-plains-18488.herokuapp.com/)

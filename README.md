@@ -6,7 +6,7 @@
 - [Click to View App](https://shielded-plains-18488.herokuapp.com/)
 
 ## Edit
-1. Fork repo from <https://github.com/jarrodyellets/dynamicNewspaper>
+1. Fork repo from <https://github.com/jarrodyellets/realEstate>
 2. Run npm install
 3. Open in your favorite text editor
 

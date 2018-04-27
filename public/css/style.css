@@ -613,9 +613,10 @@ select option {
 		height: 100%;
 		max-width: 550px;
 		overflow: scroll;
-		display: grid;
-		grid-auto-rows: (50px, 1fr, 113px);
-		grid-gap: 0px;
+	}
+
+	.detailImage {
+		height: 60%;
 	}
 
 	.detailPrice {

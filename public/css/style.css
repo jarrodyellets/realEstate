@@ -555,6 +555,10 @@ select option {
 		width: 50%;
 	}
 
+	.cardDisplay {
+		overflow: hidden;
+	}
+
 	.map {
 		display: none;
 	}
@@ -570,7 +574,6 @@ select option {
 
 	.wrapper {
 		height: 100%;
-		overflow-y: scroll;
 	}
 }
 

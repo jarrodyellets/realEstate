@@ -613,11 +613,8 @@ select option {
 		height: 100%;
 		max-width: 550px;
 		overflow: scroll;
-		-webkit-transform: translate3d(0,0,0);
-	}
-
-	.detailImage {
-		height: 75%;
+		display: grid;
+		grid-template-rows: (50px, 1fr, 113px)
 	}
 
 	.detailPrice {

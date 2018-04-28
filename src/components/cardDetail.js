@@ -4,7 +4,7 @@ const CardDetail = (props) => {
 	const cardStyle = {backgroundImage: 'url(' + props.house.image + ')'}
 	return(
 		<div className="blackout">
-			<div className="detailContainer">
+			<div className="detailContainer" role="displayFeaturedProperty">
 				<div className="detailNav">
 					<img className="detailLogo" src="https://www.jarrodyellets.com/images/pillow/pillowLogo.jpg" />
 				  <i onClick={props.changeDetail} className="fas fa-times closeIcon"></i>

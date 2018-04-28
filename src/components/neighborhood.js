@@ -2,7 +2,7 @@ import React from 'react';
 
 const Neighborhood = (props) => {
 	return (
-		<div className="selectDiv">
+		<div className="selectDiv" role="selectNeighborhood">
 			<select value={props.value} onChange={props.changeValue} className="introSelect">
 				<option value="Austin" disabled>Neighborhood</option>
 				<option value="Downtown">Downtown</option>

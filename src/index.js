@@ -148,7 +148,7 @@ class App extends Component {
 
 	render() {
 		return (
-			<div className={this.state.intro ? "" : "wrapper"} style={this.state.detail && !this.state.intro ? {height: '100%',
+			<div className={this.state.intro ? "" : "wrapper"} role="main" style={this.state.detail && !this.state.intro ? {height: '100%',
 																																										 overflow: 'hidden',
 																																										 width: '100%',
 																																										 position: 'fixed'} : null}>

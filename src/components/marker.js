@@ -6,7 +6,8 @@ const Marker = (props) => {
 		<div className={props.stateId == props.id || props.hoverId == props.id ? "houseIconDiv selectedHouseDiv" : "houseIconDiv"}
 			 	 onMouseOver={props.changeHoverId.bind(props.changeHoverId, props.id)}
 			 	 onMouseLeave={props.changeHoverId.bind(props.changeHoverId, null)}
-			 	 onClick={() => {props.changeDetail(); props.changeHouse(props.id)}}>
+			 	 onClick={() => {props.changeDetail(); props.changeHouse(props.id)}}
+			 	 role="displayMarker">
 			<div className={props.hoverId == props.id ? "housePopUp" : "hidden"}>
 				<img className="popUpImg" src={props.hoverId != null ? props.neighborhood[props.hoverId].image : null} />
 				<div className="popUpText">

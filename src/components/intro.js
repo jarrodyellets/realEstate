@@ -4,7 +4,7 @@ import Featured from './featured';
 
 const Intro = (props) => {
 	return (
-		<div className={props.intro ? "" : "hidden"}>
+		<div className={props.intro ? "" : "hidden"} role="displayIntro">
 			<div className="preload"></div>
 			<div className={props.mode == "buy" ? 'main austinDay' : 'main austinNight'}>
 				<div className="titleContainer">

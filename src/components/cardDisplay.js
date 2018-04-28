@@ -23,7 +23,7 @@ const CardDisplay = (props) => {
 	});
 
 	return (
-		<div className="cardDisplay"> 
+		<div className="cardDisplay" role="displayHouseGrid"> 
 			<div className="cardHeader">
 				<h2 className="cardHeaderTitle">{props.value} Real Estate</h2>
 				<div className="numHomes">{props.neighborhood.length} homes for {props.mode == "buy" ? "sale" : "rent"}</div>

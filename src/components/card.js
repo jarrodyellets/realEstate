@@ -16,7 +16,7 @@ class Card extends Component {
 			cursor: 'pointer'
 		}
 		return(
-			<div className="card" style={cardStyle}>
+			<div className="card" style={cardStyle} role="img" aria-label="house">
 				<div className="description">
 					<span className="price">{this.props.price}{this.props.mode == "rent" ? "/mo" : ""}</span>
 					<div>

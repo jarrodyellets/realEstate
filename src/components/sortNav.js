@@ -2,7 +2,7 @@ import React from 'react';
 
 const SortNav = (props) => {
 	return (
-		<div className="sortNav">
+		<div className="sortNav" role="filterNeighborhoods">
 			<select value={props.value} onChange={props.changeValue} className="sortSelect ">
 				<option value="Austin">All Neighborhoods &#9660;</option>
 				<option value="Downtown">Downtown</option>

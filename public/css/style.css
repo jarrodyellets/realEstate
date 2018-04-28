@@ -3,7 +3,9 @@ body {
 }
 
 .wrapper {
+	position: relative;
 	height: 100vh;
+	min-height: 700px;
 	padding-bottom: 50px;
 	overflow: hidden;
 }
@@ -222,7 +224,7 @@ select option {
 	flex-direction: column;
 	justify-content: flex-end;
 	color: #fff;
-	font-size: 14px;
+	font-size: 1.1vw;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	padding: 5px;
@@ -296,14 +298,14 @@ select option {
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 135px;
 	grid-auto-rows: 200px;
-	grid-gap: 3px;
+	grid-gap: 10px;
 	overflow-y: scroll;
 	flex-grow: 1;
 	-webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
 	box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
 	z-index: 5;
-	padding: 3px 3px 3px 3px;
+	padding: 10px 10px 10px 10px;
 }
 
 .sortNav {
@@ -508,6 +510,12 @@ select option {
 	}
 }
 
+@media screen and (max-height: 550px){
+	.detailContainer {
+			top: 0;
+			height: 100%;
+	}
+}
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -557,6 +565,10 @@ select option {
 
 	.cardDisplay {
 		overflow: hidden;
+	}
+
+	.card {
+		font-size: 14px;
 	}
 
 	.map {

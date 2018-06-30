@@ -553,14 +553,22 @@ select option {
 
 	.introTitle {
 		font-size: 30px;
+		margin-bottom: 20px;
 	}
 
 	.introSelect {
 		width: 50%;
+		text-align-last: center;
 	}
 
-	.selectButton {
-		width: 50%;
+	.buttonIntroDiv, .selectDiv {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.introButton {
+		width: 80%;
+		margin: 5px auto;
 	}
 
 	.cardDisplay {

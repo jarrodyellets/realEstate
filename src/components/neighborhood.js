@@ -3,7 +3,7 @@ import React from 'react';
 const Neighborhood = (props) => {
   return (
     <div className="selectDiv" role="selectNeighborhood">
-      <select value={props.value} onChange={props.changeValue} className="introSelect">
+      <select value={props.value} onChange={props.changeValue} className="introSelect introButton">
         <option value="Austin" disabled>Neighborhood</option>
         <option value="Downtown">Downtown</option>
         <option value="Travis Heights">Travis Heights</option>
@@ -15,7 +15,7 @@ const Neighborhood = (props) => {
         <option value="Hyde Park">Hyde Park</option>
         <option value="West Campus">West Campus</option>
       </select>
-      <button className="selectButton" onClick={props.changeIntro} >Submit</button>
+      <button className="selectButton introButton" onClick={props.changeIntro} >Submit</button>
     </div>
     )
 }

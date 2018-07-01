@@ -542,6 +542,12 @@ select option {
 }
 
 @media screen and (max-width: 768px){
+	.navbar {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
 	.logo {
 		height: 50px;
 		width: 50px;
@@ -585,6 +591,9 @@ select option {
 
 	.sortNav {
 		padding-left: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 	}
 
 	.detailLogo {

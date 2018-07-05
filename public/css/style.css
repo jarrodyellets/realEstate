@@ -26,6 +26,10 @@ body {
 	color: #05386b;
 }
 
+.navbar-default .navbar-brand:hover {
+	color: #05386b;
+}
+
 .navbar-default .navbar-nav>li>a {
 	color: #05386b;
 	font-size: 18px;
@@ -54,6 +58,10 @@ body {
 	left: 110px;
 	font-size: 24px;
 	font-weight: 700;
+}
+
+.logoTitle:hover {
+	color: #05386b;
 }
 
 .nav>li>a {

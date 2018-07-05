@@ -31,6 +31,10 @@ body {
 	font-size: 18px;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #379683;
+}
+
 .navbar .navbar-collapse {
 	text-align: center;
 	overflow-x: hidden;
@@ -365,6 +369,10 @@ select option {
 	font-weight: 700;
 	cursor: pointer;
 	padding-bottom: 10px;
+}
+
+.headerLinks:hover {
+	color: #379683;
 }
 
 .housePopUp {

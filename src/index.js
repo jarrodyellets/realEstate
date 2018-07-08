@@ -5,6 +5,7 @@ import NavBar from './components/nav';
 import Intro from './components/intro';
 import PropertyDisplay from './components/propertyDisplay';
 import SortNav from './components/sortNav';
+import Footer from './components/footer';
 import buy from './data/buy';
 import rent from './data/rent';
 import neighborhoodData from './data/neighborhoodData';
@@ -193,9 +194,7 @@ class App extends Component {
                                               detail={this.state.detail}
                                               changeDetail={this.changeDetail}
                                               changeHouse={this.changeHouse} /> : null}
-      {this.state.intro ? <div className="foot">
-                            Pillow | 2018
-                           </div> : null}
+      {this.state.intro ? <Footer /> : null}
       </div>
       )
   }

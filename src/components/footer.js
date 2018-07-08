@@ -5,12 +5,12 @@ const Footer = (props) => {
         <div className="footerWrapper" aria-label="footer">
         <div className="footerAddress">
             <div className="addressDiv">
-                <div>129 W 81st St</div>
-                <div>New York, NY</div>
+                <div>235 Park Ave</div>
+                <div>Austin, TX</div>
             </div>
             <div className="footerContact">
                 <div>jarrod@jarrodyellets.com</div>
-                <div>212-555-2390</div>
+                <div>512-555-2390</div>
             </div>
         </div>
         <div className="author">Jarrod Yellets | 2018</div>

@@ -549,7 +549,7 @@ select option {
 
 .footerSocial {
 	text-align: center;
-	align-self: flex-end;
+	padding-right: 30px;
 }
 
 .socialFoot {
@@ -565,6 +565,49 @@ select option {
 	.leftHouse {
 		padding-right: 0;
 		padding-bottom: 30px;
+	}
+
+	.footerWrapper {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		height: 195px;
+		padding: 5px 5px 0 5px;
+		font-size: 1em;
+	}
+
+	.footerAddress {
+		display: block;
+		flex: 0;
+	}
+
+	.addressDiv {
+		margin-bottom: 10px;
+	}
+
+	.footerContact {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+	.author {
+		display: block;
+		margin: 0 0 10px 0;
+		flex: 0;
+	}
+
+	.footerRight {
+		display: block;
+		margin: 0;
+	}
+
+	.footerSocial {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	.socialFoot {
+		margin: 0 10px 0 0;
 	}
 }
 

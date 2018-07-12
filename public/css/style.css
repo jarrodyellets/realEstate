@@ -552,6 +552,10 @@ select option {
 	padding-right: 30px;
 }
 
+.footerSocialTitle {
+	margin-bottom: 5px;
+}
+
 .socialFoot {
 	font-size: 1.8em;
 	margin: 0 10px;

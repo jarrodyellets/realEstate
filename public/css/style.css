@@ -517,12 +517,12 @@ select option {
 	color: #eee;
 	display: flex;
 	align-items: center;
-	padding: 0 50px;
+	padding: 0 100px;
 }
 
 .footerAddress {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex: 1;
 	margin-right: auto;

@@ -16,7 +16,7 @@ const Footer = (props) => {
             <div className="author">Jarrod Yellets | 2018</div>
             <div className="footerRight">
                 <div className="footerSocial">
-                    <div>Follow Pillow</div>
+                    <div className="footerSocialTitle">Follow Pillow</div>
                     <div>
                         <i className="fab fa-facebook socialFoot"></i>
                         <i className="fab fa-instagram socialFoot"></i>

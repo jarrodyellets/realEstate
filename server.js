@@ -1,3 +1,4 @@
+require('newrelic');
 var path = require('path');
 var express = require('express');
 

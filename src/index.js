@@ -47,6 +47,7 @@ class App extends Component {
 
   }
 
+// Changes between splash page and main page
   changeIntro(){
     const intro = this.state.intro
     this.setState({
@@ -56,6 +57,7 @@ class App extends Component {
     })
   }
 
+// Changes between buy and rent modes
   changeMode(e){
     this.setState({
       mode: e
@@ -64,6 +66,7 @@ class App extends Component {
     })
   }
 
+// Set selected neighborhood
   changeValue(e) {
     this.setState({
       value: e.target.value
@@ -72,6 +75,7 @@ class App extends Component {
     })
   }
 
+// Change number of bedrooms
   changeBeds(e){
     this.setState({
       beds: e.target.value
@@ -80,6 +84,7 @@ class App extends Component {
     })
   }
 
+// Set filtered neighborhood (beds, price, etc)
   changeNeighborhood(){
     const neighborhood = this.state.value;
     const beds = this.state.beds;
@@ -104,6 +109,7 @@ class App extends Component {
     })
   }
 
+// Change max price
   changePrice(e){
     this.setState({
       price: e.target.value
@@ -112,18 +118,21 @@ class App extends Component {
     })
   }
 
+// Current house in neighborhoom array
   changeId(e){
     this.setState({
       id: e
     })
   }
 
+// Changes current house hover on map
   changeHoverId(e){
     this.setState({
       hoverId: e
     })
   }
 
+// Changes type of sort
   changeSort(){
     const sort = this.state.ascending;
     this.setState({
@@ -133,6 +142,7 @@ class App extends Component {
     })
   }
 
+// Expands details about house
   changeDetail(){
     const detail = this.state.detail
     this.setState({
@@ -140,6 +150,7 @@ class App extends Component {
     })
   }
 
+// Changes to selected house
   changeHouse(e){
     const neighborhood = this.state.neighborhood;
     this.setState({

@@ -579,13 +579,21 @@ select option {
 	}
 
 	.footerWrapper {
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-start;
 		height: 195px;
 		padding: 5px 5px 0 5px;
 		font-size: 1em;
 		position: relative;
+	}
+
+	.footerWrapper .container {
+		margin: 0;
+		padding: 0;
+	}
+
+	.footerInnerWrapper {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
 	}
 
 	.footerAddress {

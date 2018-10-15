@@ -18,9 +18,9 @@ const Intro = (props) => {
           <Neighborhood value={props.value} changeValue={props.changeValue} changeIntro={props.changeIntro} />
         </div>
       </div>
-      <Featured buy={props.buy} 
+      {/* <Featured buy={props.buy} 
                 rent={props.rent} 
-                mode={props.mode} />
+                mode={props.mode} /> */}
     </div>
     )
 }

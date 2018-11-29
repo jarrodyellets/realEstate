@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import CardDetail from './components/cardDetail';
 import NavBar from './components/nav';
 import Intro from './components/intro';
@@ -11,6 +12,7 @@ import rent from './data/rent';
 import neighborhoodData from './data/neighborhoodData';
 
 import style from '../public/css/style.css';
+import store from './store';
 
 class App extends Component {
   constructor(props){
@@ -160,53 +162,55 @@ class App extends Component {
 
   render() {
     return (
-      <div className={this.state.intro ? "" : "wrapper"} role="main" style={this.state.detail && !this.state.intro ? {height: '100%',
-                                                                                                                      overflow: 'hidden',
-                                                                                                                      width: '100%',
-                                                                                                                      position: 'fixed'} : null}>
-        {this.state.detail ? <CardDetail house={this.state.house} 
-                                         detail={this.state.detail} 
-                                         changeDetail={this.changeDetail} 
-                                         mode={this.state.mode} /> : null}
-        <NavBar changeIntro={this.changeIntro}
+      <Provider store={store}>
+        <div className={this.state.intro ? "" : "wrapper"} role="main" style={this.state.detail && !this.state.intro ? {height: '100%',
+                                                                                                                        overflow: 'hidden',
+                                                                                                                        width: '100%',
+                                                                                                                        position: 'fixed'} : null}>
+          {this.state.detail ? <CardDetail house={this.state.house} 
+                                          detail={this.state.detail} 
+                                          changeDetail={this.changeDetail} 
+                                          mode={this.state.mode} /> : null}
+          <NavBar changeIntro={this.changeIntro}
+                  intro={this.state.intro}
+                  mode={this.state.mode}
+                  changeMode={this.changeMode} />
+          {!this.state.intro ?<SortNav value={this.state.value}
+                                      changeValue={this.changeValue}
+                                      beds={this.state.beds} price={this.state.price}
+                                      changeBeds={this.changeBeds}
+                                      changePrice={this.changePrice}
+                                      mode={this.state.mode} />: null}
+          <Intro buy={buy}
+                rent={rent}
                 intro={this.state.intro}
+                changeIntro={this.changeIntro}
+                value={this.state.value}
+                changeValue={this.changeValue}
                 mode={this.state.mode}
-                changeMode={this.changeMode} />
-        {!this.state.intro ?<SortNav value={this.state.value}
-                                     changeValue={this.changeValue}
-                                     beds={this.state.beds} price={this.state.price}
-                                     changeBeds={this.changeBeds}
-                                     changePrice={this.changePrice}
-                                     mode={this.state.mode} />: null}
-        <Intro buy={buy}
-               rent={rent}
-               intro={this.state.intro}
-               changeIntro={this.changeIntro}
-               value={this.state.value}
-               changeValue={this.changeValue}
-               mode={this.state.mode}
-               changeMode={this.changeMode}
-               detail={this.state.detail}
-               changeDetail={this.changeDetail} 
-               changeHouse={this.changeHouse} />
-        {!this.state.intro ? <PropertyDisplay id={this.state.id}
-                                              changeId={this.changeId}
-                                              mode={this.state.mode}
-                                              zoom={this.state.zoom}
-                                              center={this.state.center}
-                                              value={this.state.value}
-                                              buy={buy}
-                                              neighborhood={this.state.neighborhood}
-                                              ascending={this.state.ascending}
-                                              changeSort={this.changeSort}
-                                              hoverId={this.state.hoverId}
-                                              changeHoverId={this.changeHoverId}
-                                              house={this.state.house}
-                                              detail={this.state.detail}
-                                              changeDetail={this.changeDetail}
-                                              changeHouse={this.changeHouse} /> : null}
-      {this.state.intro ? <Footer /> : null}
-      </div>
+                changeMode={this.changeMode}
+                detail={this.state.detail}
+                changeDetail={this.changeDetail} 
+                changeHouse={this.changeHouse} />
+          {!this.state.intro ? <PropertyDisplay id={this.state.id}
+                                                changeId={this.changeId}
+                                                mode={this.state.mode}
+                                                zoom={this.state.zoom}
+                                                center={this.state.center}
+                                                value={this.state.value}
+                                                buy={buy}
+                                                neighborhood={this.state.neighborhood}
+                                                ascending={this.state.ascending}
+                                                changeSort={this.changeSort}
+                                                hoverId={this.state.hoverId}
+                                                changeHoverId={this.changeHoverId}
+                                                house={this.state.house}
+                                                detail={this.state.detail}
+                                                changeDetail={this.changeDetail}
+                                                changeHouse={this.changeHouse} /> : null}
+        {this.state.intro ? <Footer /> : null}
+        </div>
+      </Provider>
       )
   }
 }

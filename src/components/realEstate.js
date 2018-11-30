@@ -12,10 +12,6 @@ import { changeInt } from '../actions/introAction';
 import { connect } from 'react-redux';
 
 
-import store from '../store';
-
-const rState = store.getState();
-
 class RealEstate extends Component {
   constructor(props){
     super(props);
@@ -52,7 +48,7 @@ class RealEstate extends Component {
 
 // Changes between splash page and main page
   changeIntro(){
-    const intro = rState.intro.intro
+    const intro = this.props.intro
     this.props.changeInt(!intro);
     this.changeNeighborhood();
   }

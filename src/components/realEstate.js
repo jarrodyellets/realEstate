@@ -11,6 +11,7 @@ import neighborhoodData from '../data/neighborhoodData';
 import { changeInt } from '../actions/introAction';
 import { connect } from 'react-redux';
 
+
 import store from '../store';
 
 const rState = store.getState();
@@ -159,7 +160,7 @@ class RealEstate extends Component {
 
   render() {
     return (
-      <div className={rState.intro.intro ? "" : "wrapper"} role="main" style={this.state.detail && !rState.intro.intro ? {height: '100%',
+      <div className={this.props.intro ? "" : "wrapper"} role="main" style={this.state.detail && !this.props.intro ? {height: '100%',
                                                                                                                       overflow: 'hidden',
                                                                                                                       width: '100%',
                                                                                                                       position: 'fixed'} : null}>
@@ -168,10 +169,10 @@ class RealEstate extends Component {
                                         changeDetail={this.changeDetail} 
                                         mode={this.state.mode} /> : null}
         <NavBar changeIntro={this.changeIntro}
-                intro={rState.intro.intro}
+                intro={this.props.intro}
                 mode={this.state.mode}
                 changeMode={this.changeMode} />
-        {!rState.intro.intro ?<SortNav value={this.state.value}
+        {!this.props.intro ?<SortNav value={this.state.value}
                                     changeValue={this.changeValue}
                                     beds={this.state.beds} price={this.state.price}
                                     changeBeds={this.changeBeds}
@@ -179,7 +180,7 @@ class RealEstate extends Component {
                                     mode={this.state.mode} />: null}
         <Intro buy={buy}
               rent={rent}
-              intro={rState.intro.intro}
+              intro={this.props.intro}
               changeIntro={this.changeIntro}
               value={this.state.value}
               changeValue={this.changeValue}
@@ -188,7 +189,7 @@ class RealEstate extends Component {
               detail={this.state.detail}
               changeDetail={this.changeDetail} 
               changeHouse={this.changeHouse} />
-        {!rState.intro.intro ? <PropertyDisplay id={this.state.id}
+        {!this.props.intro ? <PropertyDisplay id={this.state.id}
                                               changeId={this.changeId}
                                               mode={this.state.mode}
                                               zoom={this.state.zoom}
@@ -204,10 +205,14 @@ class RealEstate extends Component {
                                               detail={this.state.detail}
                                               changeDetail={this.changeDetail}
                                               changeHouse={this.changeHouse} /> : null}
-      {rState.intro.intro ? <Footer /> : null}
+      {this.props.intro ? <Footer /> : null}
       </div>
       )
   }
 }
 
-export default connect(null, {changeInt})(RealEstate);
+const mapStateToProps = state => ({
+  intro: state.intro.intro
+})
+
+export default connect(mapStateToProps, {changeInt})(RealEstate);

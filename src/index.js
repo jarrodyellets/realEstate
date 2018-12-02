@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import RealEstate from './components/realEstate';
+import Main from './components/main';
 import { Provider } from 'react-redux';
 
 import store from './store';
@@ -10,7 +10,7 @@ class App extends Component {
   render(){
     return(
       <Provider store={store}>
-        <RealEstate />
+        <Main />
       </Provider>
     )
   }

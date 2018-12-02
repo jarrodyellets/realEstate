@@ -12,7 +12,7 @@ import { changeInt } from '../actions/introAction';
 import { connect } from 'react-redux';
 
 
-class RealEstate extends Component {
+class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -211,4 +211,4 @@ const mapStateToProps = state => ({
   intro: state.intro.intro
 })
 
-export default connect(mapStateToProps, {changeInt})(RealEstate);
+export default connect(mapStateToProps, {changeInt})(Main);

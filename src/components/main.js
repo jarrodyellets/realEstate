@@ -9,6 +9,7 @@ import buy from '../data/buy';
 import rent from '../data/rent';
 import neighborhoodData from '../data/neighborhoodData';
 import { changeInt } from '../actions/introAction';
+import { changeVal } from '../actions/valueAction';
 import { connect } from 'react-redux';
 
 
@@ -18,7 +19,6 @@ class Main extends Component {
     this.state = {
       mode: "buy",
       ascending: true,
-      value: "Austin",
       neighborhood: buy,
       beds: "beds",
       price: "price",
@@ -64,9 +64,9 @@ class Main extends Component {
 
 // Set selected neighborhood
   changeValue(e) {
-    this.setState({
-      value: e.target.value
-    }, () => {
+    const value = e.target.value;
+    this.props.changeVal(value)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
@@ -82,7 +82,8 @@ class Main extends Component {
 
 // Set filtered neighborhood (beds, price, etc)
   changeNeighborhood(){
-    const neighborhood = this.state.value;
+    const neighborhood = this.props.value;
+    console.log(neighborhood);
     const beds = this.state.beds;
     const price = this.state.price;
     const list = this.state.mode == "buy" ? buy : rent;
@@ -100,7 +101,7 @@ class Main extends Component {
                                displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) < Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) < Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} )
     this.setState({
       neighborhood: sortedNeighborhood,
-      center: neighborhoodData[this.state.value.replace(/\s/g, '')],
+      center: neighborhoodData[this.props.value.replace(/\s/g, '')],
       zoom: neighborhood == "Austin" ? 13 : 14
     })
   }
@@ -168,7 +169,7 @@ class Main extends Component {
                 intro={this.props.intro}
                 mode={this.state.mode}
                 changeMode={this.changeMode} />
-        {!this.props.intro ?<SortNav value={this.state.value}
+        {!this.props.intro ?<SortNav value={this.props.value}
                                     changeValue={this.changeValue}
                                     beds={this.state.beds} price={this.state.price}
                                     changeBeds={this.changeBeds}
@@ -178,7 +179,7 @@ class Main extends Component {
               rent={rent}
               intro={this.props.intro}
               changeIntro={this.changeIntro}
-              value={this.state.value}
+              value={this.props.value}
               changeValue={this.changeValue}
               mode={this.state.mode}
               changeMode={this.changeMode}
@@ -190,7 +191,7 @@ class Main extends Component {
                                               mode={this.state.mode}
                                               zoom={this.state.zoom}
                                               center={this.state.center}
-                                              value={this.state.value}
+                                              value={this.props.value}
                                               buy={buy}
                                               neighborhood={this.state.neighborhood}
                                               ascending={this.state.ascending}
@@ -208,7 +209,8 @@ class Main extends Component {
 }
 
 const mapStateToProps = state => ({
-  intro: state.intro.intro
+  intro: state.intro.intro,
+  value: state.value.value
 })
 
-export default connect(mapStateToProps, {changeInt})(Main);
+export default connect(mapStateToProps, {changeInt, changeVal})(Main);

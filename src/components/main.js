@@ -50,7 +50,6 @@ class Main extends Component {
   changeIntro(){
     const intro = this.props.intro
     this.props.changeInt(!intro);
-    this.changeNeighborhood();
   }
 
 // Changes between buy and rent modes

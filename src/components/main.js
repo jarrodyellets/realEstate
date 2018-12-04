@@ -11,6 +11,7 @@ import neighborhoodData from '../data/neighborhoodData';
 import { changeInt } from '../actions/introAction';
 import { changeVal } from '../actions/valueAction';
 import { changeMo } from '../actions/modeAction';
+import { changeBed } from '../actions/bedsAction';
 import { connect } from 'react-redux';
 
 
@@ -20,7 +21,6 @@ class Main extends Component {
     this.state = {
       ascending: true,
       neighborhood: buy,
-      beds: "beds",
       price: "price",
       id: null,
       hoverId: null,
@@ -71,9 +71,9 @@ class Main extends Component {
 
 // Change number of bedrooms
   changeBeds(e){
-    this.setState({
-      beds: e.target.value
-    }, () => {
+    const beds = e.target.value;
+    this.props.changeBed(beds)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
@@ -81,10 +81,9 @@ class Main extends Component {
 // Set filtered neighborhood (beds, price, etc)
   changeNeighborhood(){
     const neighborhood = this.props.value;
-    console.log(neighborhood);
-    const beds = this.state.beds;
+    const beds = this.props.beds;
     const price = this.state.price;
-    const list = this.state.mode == "buy" ? buy : rent;
+    const list = this.props.mode == "buy" ? buy : rent;
     const filteredNeighborhood = list.filter(function(house){
      return neighborhood != "Austin" ? house.neighborhood == neighborhood : buy
     })
@@ -169,7 +168,8 @@ class Main extends Component {
                 changeMode={this.changeMode} />
         {!this.props.intro ?<SortNav value={this.props.value}
                                     changeValue={this.changeValue}
-                                    beds={this.state.beds} price={this.state.price}
+                                    beds={this.props.beds} 
+                                    price={this.state.price}
                                     changeBeds={this.changeBeds}
                                     changePrice={this.changePrice}
                                     mode={this.props.mode} />: null}
@@ -209,7 +209,8 @@ class Main extends Component {
 const mapStateToProps = state => ({
   intro: state.intro.intro,
   value: state.value.value,
-  mode: state.mode.mode
+  mode: state.mode.mode,
+  beds: state.beds.beds
 })
 
-export default connect(mapStateToProps, {changeInt, changeVal, changeMo})(Main);
+export default connect(mapStateToProps, {changeInt, changeVal, changeMo, changeBed})(Main);

@@ -10,6 +10,7 @@ import rent from '../data/rent';
 import neighborhoodData from '../data/neighborhoodData';
 import { changeInt } from '../actions/introAction';
 import { changeVal } from '../actions/valueAction';
+import { changeMo } from '../actions/modeAction';
 import { connect } from 'react-redux';
 
 
@@ -17,7 +18,6 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
-      mode: "buy",
       ascending: true,
       neighborhood: buy,
       beds: "beds",
@@ -54,9 +54,8 @@ class Main extends Component {
 
 // Changes between buy and rent modes
   changeMode(e){
-    this.setState({
-      mode: e
-    }, () => {
+    this.props.changeMo(e)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
@@ -163,31 +162,31 @@ class Main extends Component {
         {this.state.detail ? <CardDetail house={this.state.house} 
                                         detail={this.state.detail} 
                                         changeDetail={this.changeDetail} 
-                                        mode={this.state.mode} /> : null}
+                                        mode={this.props.mode} /> : null}
         <NavBar changeIntro={this.changeIntro}
                 intro={this.props.intro}
-                mode={this.state.mode}
+                mode={this.props.mode}
                 changeMode={this.changeMode} />
         {!this.props.intro ?<SortNav value={this.props.value}
                                     changeValue={this.changeValue}
                                     beds={this.state.beds} price={this.state.price}
                                     changeBeds={this.changeBeds}
                                     changePrice={this.changePrice}
-                                    mode={this.state.mode} />: null}
+                                    mode={this.props.mode} />: null}
         <Intro buy={buy}
               rent={rent}
               intro={this.props.intro}
               changeIntro={this.changeIntro}
               value={this.props.value}
               changeValue={this.changeValue}
-              mode={this.state.mode}
+              mode={this.props.mode}
               changeMode={this.changeMode}
               detail={this.state.detail}
               changeDetail={this.changeDetail} 
               changeHouse={this.changeHouse} />
         {!this.props.intro ? <PropertyDisplay id={this.state.id}
                                               changeId={this.changeId}
-                                              mode={this.state.mode}
+                                              mode={this.props.mode}
                                               zoom={this.state.zoom}
                                               center={this.state.center}
                                               value={this.props.value}
@@ -209,7 +208,8 @@ class Main extends Component {
 
 const mapStateToProps = state => ({
   intro: state.intro.intro,
-  value: state.value.value
+  value: state.value.value,
+  mode: state.mode.mode
 })
 
-export default connect(mapStateToProps, {changeInt, changeVal})(Main);
+export default connect(mapStateToProps, {changeInt, changeVal, changeMo})(Main);

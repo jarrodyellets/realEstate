@@ -12,6 +12,7 @@ import { changeInt } from '../actions/introAction';
 import { changeVal } from '../actions/valueAction';
 import { changeMo } from '../actions/modeAction';
 import { changeBed } from '../actions/bedsAction';
+import { changeAs } from '../actions/ascendingAction';
 import { connect } from 'react-redux';
 
 
@@ -19,7 +20,6 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
-      ascending: true,
       neighborhood: buy,
       price: "price",
       id: null,
@@ -49,7 +49,10 @@ class Main extends Component {
 // Changes between splash page and main page
   changeIntro(){
     const intro = this.props.intro
-    this.props.changeInt(!intro);
+    this.props.changeInt(!intro)
+    .then(() => {
+      this.changeNeighborhood();
+    })
   }
 
 // Changes between buy and rent modes
@@ -80,6 +83,7 @@ class Main extends Component {
 
 // Set filtered neighborhood (beds, price, etc)
   changeNeighborhood(){
+    console.log(this.props.ascending);
     const neighborhood = this.props.value;
     const beds = this.props.beds;
     const price = this.state.price;
@@ -93,7 +97,7 @@ class Main extends Component {
     const displayedNeighborhood = newfilteredNeighborhood.filter(function(house){
       return price != "price" ? Number((house.price).replace(/[^\d.]/g, '')) <= Number((price).replace(/[^\d.]/g, '')) : filteredNeighborhood
     })
-    const sortedNeighborhood = this.state.ascending ? 
+    const sortedNeighborhood = this.props.ascending ? 
                                displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) > Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) > Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} ) :
                                displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) < Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) < Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} )
     this.setState({
@@ -128,12 +132,12 @@ class Main extends Component {
 
 // Changes type of sort
   changeSort(){
-    const sort = this.state.ascending;
-    this.setState({
-      ascending: !sort
-    }, () => {
+    const sort = this.props.ascending;
+    this.props.changeAs(!sort)
+    .then(() => {
       this.changeNeighborhood();
     })
+    
   }
 
 // Expands details about house
@@ -192,7 +196,7 @@ class Main extends Component {
                                               value={this.props.value}
                                               buy={buy}
                                               neighborhood={this.state.neighborhood}
-                                              ascending={this.state.ascending}
+                                              ascending={this.props.ascending}
                                               changeSort={this.changeSort}
                                               hoverId={this.state.hoverId}
                                               changeHoverId={this.changeHoverId}
@@ -210,7 +214,8 @@ const mapStateToProps = state => ({
   intro: state.intro.intro,
   value: state.value.value,
   mode: state.mode.mode,
-  beds: state.beds.beds
+  beds: state.beds.beds,
+  ascending: state.ascending.ascending
 })
 
-export default connect(mapStateToProps, {changeInt, changeVal, changeMo, changeBed})(Main);
+export default connect(mapStateToProps, {changeInt, changeVal, changeMo, changeBed, changeAs})(Main);

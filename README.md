@@ -1,6 +1,6 @@
 # Pillow Real Estate
 
-[![Build Status](https://travis-ci.org/jarrodyellets/realEstate.svg?branch=master)](https://travis-ci.org/jarrodyellets/realEstate)
+[![Build Status](https://travis-ci.org/jarrodyellets/realEstate.svg?branch=master)](https://travis-ci.org/jarrodyellets/realEstate) [![Greenkeeper badge](https://badges.greenkeeper.io/jarrodyellets/realEstate.svg)](https://greenkeeper.io/)
 
 <figure><img src="http://www.jarrodyellets.com/images/pillow.png" alt="Pillow Real Estate" style="width: 80%; display: block; margin-left: auto; margin-right: auto;"/></figure>
 

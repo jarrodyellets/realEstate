@@ -1,5 +1,7 @@
 # Pillow Real Estate
 
+[![Build Status](https://travis-ci.org/jarrodyellets/realEstate.svg?branch=master)](https://travis-ci.org/jarrodyellets/realEstate)
+
 <figure><img src="http://www.jarrodyellets.com/images/pillow.png" alt="Pillow Real Estate" style="width: 80%; display: block; margin-left: auto; margin-right: auto;"/></figure>
 
 ## View

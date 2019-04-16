@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Neighborhood from './neighborhood';
-import Featured from './featured';
 
 const Intro = (props) => {
   return (
@@ -18,9 +17,6 @@ const Intro = (props) => {
           <Neighborhood value={props.value} changeValue={props.changeValue} changeIntro={props.changeIntro} />
         </div>
       </div>
-      {/* <Featured buy={props.buy} 
-                rent={props.rent} 
-                mode={props.mode} /> */}
     </div>
     )
 }

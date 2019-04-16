@@ -9,18 +9,18 @@ import buy from '../data/buy';
 import rent from '../data/rent';
 import neighborhoodData from '../data/neighborhoodData';
 import { changeInt } from '../actions/introAction';
+import { changeVal } from '../actions/valueAction';
+import { changeMo } from '../actions/modeAction';
+import { changeBed } from '../actions/bedsAction';
+import { changeAs } from '../actions/ascendingAction';
 import { connect } from 'react-redux';
 
 
-class RealEstate extends Component {
+class Main extends Component {
   constructor(props){
     super(props);
     this.state = {
-      mode: "buy",
-      ascending: true,
-      value: "Austin",
       neighborhood: buy,
-      beds: "beds",
       price: "price",
       id: null,
       hoverId: null,
@@ -49,43 +49,45 @@ class RealEstate extends Component {
 // Changes between splash page and main page
   changeIntro(){
     const intro = this.props.intro
-    this.props.changeInt(!intro);
-    this.changeNeighborhood();
+    this.props.changeInt(!intro)
+    .then(() => {
+      this.changeNeighborhood();
+    })
   }
 
 // Changes between buy and rent modes
   changeMode(e){
-    this.setState({
-      mode: e
-    }, () => {
+    this.props.changeMo(e)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
 
 // Set selected neighborhood
   changeValue(e) {
-    this.setState({
-      value: e.target.value
-    }, () => {
+    const value = e.target.value;
+    this.props.changeVal(value)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
 
 // Change number of bedrooms
   changeBeds(e){
-    this.setState({
-      beds: e.target.value
-    }, () => {
+    const beds = e.target.value;
+    this.props.changeBed(beds)
+    .then(() => {
       this.changeNeighborhood();
     })
   }
 
 // Set filtered neighborhood (beds, price, etc)
   changeNeighborhood(){
-    const neighborhood = this.state.value;
-    const beds = this.state.beds;
+    console.log(this.props.ascending);
+    const neighborhood = this.props.value;
+    const beds = this.props.beds;
     const price = this.state.price;
-    const list = this.state.mode == "buy" ? buy : rent;
+    const list = this.props.mode == "buy" ? buy : rent;
     const filteredNeighborhood = list.filter(function(house){
      return neighborhood != "Austin" ? house.neighborhood == neighborhood : buy
     })
@@ -95,12 +97,12 @@ class RealEstate extends Component {
     const displayedNeighborhood = newfilteredNeighborhood.filter(function(house){
       return price != "price" ? Number((house.price).replace(/[^\d.]/g, '')) <= Number((price).replace(/[^\d.]/g, '')) : filteredNeighborhood
     })
-    const sortedNeighborhood = this.state.ascending ? 
+    const sortedNeighborhood = this.props.ascending ? 
                                displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) > Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) > Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} ) :
                                displayedNeighborhood.sort(function(a,b) {return (Number((a.price).replace(/[^\d.]/g, '')) < Number((b.price).replace(/[^\d.]/g, ''))) ? 1 : ((Number((b.price).replace(/[^\d.]/g, '')) < Number((a.price).replace(/[^\d.]/g, ''))) ? -1 : 0);} )
     this.setState({
       neighborhood: sortedNeighborhood,
-      center: neighborhoodData[this.state.value.replace(/\s/g, '')],
+      center: neighborhoodData[this.props.value.replace(/\s/g, '')],
       zoom: neighborhood == "Austin" ? 13 : 14
     })
   }
@@ -130,12 +132,12 @@ class RealEstate extends Component {
 
 // Changes type of sort
   changeSort(){
-    const sort = this.state.ascending;
-    this.setState({
-      ascending: !sort
-    }, () => {
+    const sort = this.props.ascending;
+    this.props.changeAs(!sort)
+    .then(() => {
       this.changeNeighborhood();
     })
+    
   }
 
 // Expands details about house
@@ -163,37 +165,38 @@ class RealEstate extends Component {
         {this.state.detail ? <CardDetail house={this.state.house} 
                                         detail={this.state.detail} 
                                         changeDetail={this.changeDetail} 
-                                        mode={this.state.mode} /> : null}
+                                        mode={this.props.mode} /> : null}
         <NavBar changeIntro={this.changeIntro}
                 intro={this.props.intro}
-                mode={this.state.mode}
+                mode={this.props.mode}
                 changeMode={this.changeMode} />
-        {!this.props.intro ?<SortNav value={this.state.value}
+        {!this.props.intro ?<SortNav value={this.props.value}
                                     changeValue={this.changeValue}
-                                    beds={this.state.beds} price={this.state.price}
+                                    beds={this.props.beds} 
+                                    price={this.state.price}
                                     changeBeds={this.changeBeds}
                                     changePrice={this.changePrice}
-                                    mode={this.state.mode} />: null}
+                                    mode={this.props.mode} />: null}
         <Intro buy={buy}
               rent={rent}
               intro={this.props.intro}
               changeIntro={this.changeIntro}
-              value={this.state.value}
+              value={this.props.value}
               changeValue={this.changeValue}
-              mode={this.state.mode}
+              mode={this.props.mode}
               changeMode={this.changeMode}
               detail={this.state.detail}
               changeDetail={this.changeDetail} 
               changeHouse={this.changeHouse} />
         {!this.props.intro ? <PropertyDisplay id={this.state.id}
                                               changeId={this.changeId}
-                                              mode={this.state.mode}
+                                              mode={this.props.mode}
                                               zoom={this.state.zoom}
                                               center={this.state.center}
-                                              value={this.state.value}
+                                              value={this.props.value}
                                               buy={buy}
                                               neighborhood={this.state.neighborhood}
-                                              ascending={this.state.ascending}
+                                              ascending={this.props.ascending}
                                               changeSort={this.changeSort}
                                               hoverId={this.state.hoverId}
                                               changeHoverId={this.changeHoverId}
@@ -208,7 +211,11 @@ class RealEstate extends Component {
 }
 
 const mapStateToProps = state => ({
-  intro: state.intro.intro
+  intro: state.intro.intro,
+  value: state.value.value,
+  mode: state.mode.mode,
+  beds: state.beds.beds,
+  ascending: state.ascending.ascending
 })
 
-export default connect(mapStateToProps, {changeInt})(RealEstate);
+export default connect(mapStateToProps, {changeInt, changeVal, changeMo, changeBed, changeAs})(Main);

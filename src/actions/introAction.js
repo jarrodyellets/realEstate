@@ -1,8 +1,11 @@
 import { INTRO } from './types';
 
 export const changeInt = intro => dispatch => {
-  dispatch({
-    type: INTRO,
-    payload: intro
-  })
+  return new Promise((resolve, reject) => {
+    dispatch({
+      type: INTRO,
+      payload: intro
+    });
+    resolve();
+  });
 }

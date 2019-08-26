@@ -39,7 +39,7 @@
     "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
+    "react-redux": "^7.1.1",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   }

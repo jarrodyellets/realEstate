@@ -34,7 +34,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "google-map-react": "^1.1.4",
-    "newrelic": "^5.6.4",
+    "newrelic": "^6.0.0",
     "path": "^0.12.7",
     "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",

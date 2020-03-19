@@ -36,7 +36,7 @@
     "google-map-react": "^1.1.4",
     "newrelic": "^6.0.0",
     "path": "^0.12.7",
-    "react": "^16.8.6",
+    "react": "^16.13.1",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",

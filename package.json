@@ -37,7 +37,7 @@
     "newrelic": "^6.0.0",
     "path": "^0.12.7",
     "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
     "redux": "^4.0.1",
